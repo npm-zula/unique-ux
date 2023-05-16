@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+.title-large {
+  color: var(--clr-white);
+  font-size: clamp(2.7rem, 7vmin, 7.625rem);
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  line-height: clamp(3.6rem, 7.2vmin, 9rem);
+  margin-bottom: 0px;
+  margin-top: 0;
+  width: minmax(30ch 70ch);
+}
+
+.title {
+    color: yellow;
+    font-size: clamp(2.5rem, 7vmin, 5.75rem);
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    line-height: clamp(3.6rem, 9vmin, 5.75rem);
+    margin-bottom: 0px;
+    margin-top: 0;
+    width: minmax(30ch 70ch);
+  }
+
+  .subtitle {
+    color: var(--clr-white);
+    font-size: clamp(1.25rem, 3vmin, 2rem);
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+  h1 {
+    color: var(--clr-white);
+    font-size: clamp(2.5rem, 7.2vmin, 3.75rem);
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    line-height: clamp(3.6rem, 7.2vmin, 5.75rem);
+    letter-spacing: 0px;
+    margin-top: 0;
+    width: minmax(30ch 70ch);
+  }
+
+  h2 {
+    color: var(--clr-white);
+    font-size: clamp(2rem, 7vmin,  2.625rem);
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;  
+    font-weight: 300;
+    line-height: 3.125rem;
+    margin-bottom: 12px;
+  }
+
+h3 {
+    color: var(--clr-white);
+    font-size: 1.75rem;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;    
+    font-weight: 300;
+    line-height: 2.5rem;
+    max-width: 48ch;
+}
+
+h4 {
+    color: var(--clr-white);
+    font-size: 1.728rem;
+    text-align: left;
+    font-family: 'Lora', 'PT Serif', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', serif;    
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 24px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 8px;
+}
+
+h5 {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  font-family:  'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+h6 {
+  color: var(--clr-white);
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.overline {
+  font-weight: 600;
+  font-size: 1rem;
+  font-family:'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  padding-bottom: 12px;
+  margin-top: 16px;
+  margin-bottom: 0;
+  letter-spacing: 0px;
+  color: var(--clr-white);
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+q {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.brand {
+  font-family: 'PT Sans', sans-serif;
+  margin-left: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 21px;
+  color: var(--link);
+  text-shadow: 0px 4px 4px rgba(0, 213, 255, 0.44);
+}
+  p {
+    color: var(--clr-white);
+    margin: 0;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: clamp(.875rem, 4vmin, 1.1rem);
+    font-weight: 400;
+    line-height: 1.9;
+    max-width: 80ch;
+  }
+
+  .p-content {
+    margin-bottom: 1rem;
+    text-shadow: 0px 4px 4px rgba(0, 213, 255, 0.34);
+  }
+
+  .p-content-s {
+    font-size: .875rem;
+  }
+
+  .label-large {
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.75rem;
+    letter-spacing: 0px;
+    margin: 0;
+    padding-left: 0.5rem;
+  }
+
+  .label-medium {
+    color: var(--clr-white);
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: .1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0px;
+    margin: 0;
+    padding-left: 0.5rem;
+  }
+
+  .label-small {
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: .875rem;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 1.125rem;
+    letter-spacing: .16px;
+    margin: 0;
+    padding-left: 0.5rem;
+    color: #FFFF00;
+  }
+
+  .button-text {
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }

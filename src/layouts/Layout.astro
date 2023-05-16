@@ -4,6 +4,9 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+
+import Navbar from '../components/Navbar.astro';
+import '../stylesheets/main.css';
 ---
 
 <!DOCTYPE html>
@@ -13,23 +16,74 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 		<title>{title}</title>
 	</head>
 	<body>
+		<Navbar />
 		<slot />
 	</body>
 </html>
+
+
 <style is:global>
 	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+    /*Primary Colors*/
+    --Primary-100: #d9edf9;
+    --Primary-200: #b3dbf5;
+    --Primary-300: #78bbef;
+    --Primary-400: #3d9be9;
+    --Primary-500: #326188;
+    --Primary-600: var(--medium);
+
+    /*Secondary Colors*/
+    --secondary-100: #3e92cc;
+    --secondary-200: #347aae;
+    --secondary-300: #2a628f;
+    --secondary-400: #215375;
+    --secondary-500: #16324f;
+    --secondary-600: #13293d;
+
+    /*Tertiary Colors*/
+    --tertiary-100: #47de8d;
+    --tertiary-200: #83e7a9;
+    --tertiary-300: #e8f1f2;
+    --tertiary-400: #edf5dd;
+    --tertiary-500: yellow;
+    --tertiary-600: #002a80;
+
+    /*Utility Colors*/
+    --page-background: #CFD6DE;
+    --dark-background: #323232;
+    --yellow: #FFE900;
+    --title: white;
+    --mainTitle: var(--dark);
+    --body: #4e4e4e;
+    --icon: #969696;
+    --divider: #cecaca;
+    --black: #121212;
+    --white: #ededed;
+	
+	/*Custom Colors*/
+	--dark: #202123;
+    --medium: #181818;
+    --light: #3c3d44;
+    --btn: #535BCC;
+    --link: #FFFF00;
+    --clr-white: #f6f2f5;
+}
+
+
+	.yellow {
+		color: #FFFF00;
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
+
+	.white {
+		color: white;
 	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+
 </style>
+
