@@ -1,41 +1,4 @@
 
-:root {
-    /*Primary Colors*/
-    --Primary-100: #d9edf9;
-    --Primary-200: #b3dbf5;
-    --Primary-300: #78bbef;
-    --Primary-400: #3d9be9;
-    --Primary-500: #326188;
-    --Primary-600: var(--medium);
-
-    /*Secondary Colors*/
-    --secondary-100: #3e92cc;
-    --secondary-200: #347aae;
-    --secondary-300: #2a628f;
-    --secondary-400: #215375;
-    --secondary-500: #16324f;
-    --secondary-600: #13293d;
-
-    /*Tertiary Colors*/
-    --tertiary-100: #47de8d;
-    --tertiary-200: #83e7a9;
-    --tertiary-300: #e8f1f2;
-    --tertiary-400: #edf5dd;
-    --tertiary-500: yellow;
-    --tertiary-600: #002a80;
-
-    /*Utility Colors*/
-    --page-background: #CFD6DE;
-    --dark-background: #323232;
-    --yellow: #FFE900;
-    --title: white;
-    --mainTitle: var(--dark);
-    --body: #4e4e4e;
-    --icon: #969696;
-    --divider: #cecaca;
-    --black: #121212;
-    --white: #ededed;
-}
 /* NAVIGATION
 ================================*/
 .navigation {

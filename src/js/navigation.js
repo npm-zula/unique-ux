@@ -1,67 +1,4 @@
----
-export interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
-
-import Navbar from '../components/Navbar.astro';
-
-import '../stylesheets/article.css';
-import '../stylesheets/aside.css';
-import '../stylesheets/blog.css';
-import '../stylesheets/btns.css';
-import '../stylesheets/cards.css';
-import '../stylesheets/colors.css';
-import '../stylesheets/container-full.css';
-import '../stylesheets/container.css';
-import '../stylesheets/copy-text.css';
-import '../stylesheets/daily-ux.css';
-import '../stylesheets/details.css';
-import '../stylesheets/form.css';
-import '../stylesheets/hero.css';
-import '../stylesheets/login.css';
-import '../stylesheets/main.css';
-// import '../stylesheets/navbar.css';
-import '../stylesheets/navigation.css';
-import '../stylesheets/success.css';
-import '../stylesheets/type.css';
-import '../stylesheets/utils.css';
-
----
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-        <script src="../js/navigation.js"></script>
-
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-		<title>{title}</title>
-	</head>
-	<body>
-		<Navbar />
-		<slot />
-	</body>
-</html>
-
-<!-- <script src="../js/navigation.js" ></script> -->
-
-<script>
-       var navigation = new Navigation(document.getElementById("navigation"), {
-        overlayColor: "#31A6FF"
-    });
-</script>
-
-
-<script is:inline>
-
-        (function (root, factory) {
+(function (root, factory) {
   var pluginName = "Navigation";
 
   if (typeof define === "function" && define.amd) {
@@ -784,10 +721,3 @@ import '../stylesheets/utils.css';
 
   return Plugin;
 });
-
-</script> 
-
-
-
-
-

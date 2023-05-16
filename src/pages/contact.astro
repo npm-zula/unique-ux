@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import '../stylesheets/main.css';
+import '../stylesheets/form.css';
+
+---
+
+
+<Layout title="Unique UX">
+    <header class="main background100">
+        <section class="hero-container">
+            <h1 class="subtitle">Contact Unique UX</h1>        
+        </section>
+    </header>
+
+
+    <form class="form"
+            name="contact"
+            action="/success" 
+            method="POST" 
+            data-netlify="true"
+            data-netlify-recaptcha="true">
+
+            <label class="margin-bottom-16">Name <input type="text" name="name" /></label>
+            <label class="margin-bottom-16">Email* <input type="email" name="email" /></label>
+            <label class="grid">Are you new to Unique UX?
+                <select class="margin-bottom-16" name="role[]">
+                    <option value="new-customer">Yes, I'm new</option>
+                    <option value="exsisting-customer">No, I'm following up.</option>
+                    <option value="other">I'm neither</option>
+                </select></label>
+            <p>
+                <label class="margin-bottom-8">Message: <textarea name="message"></textarea></label>
+            </p>
+            <div data-netlify-recaptcha="true"></div>
+            <p>
+                <button class="button-text margin-bottom-16" type="submit">Send</button>
+            </p>
+    </form>
+</Layout>
