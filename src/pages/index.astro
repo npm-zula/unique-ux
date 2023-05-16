@@ -1,12 +1,60 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import IndexHead from '../components/Index_head.astro';
+import '../stylesheets/hero.css';
+import '../stylesheets/article.css';
+import '../stylesheets/form.css';
+import '../stylesheets/aside.css';
+import '../stylesheets/type.css';
+import '../stylesheets/details.css';
 ---
 
 <Layout title="Unique UX">
-	<main>
+	<IndexHead />
 
-	</main>
+    <main class="rounded-corners">
+        <aside class="padding-16">
+            <div class="rounded-corners">
+                <div class="margin-bottom-16">
+                    <p class="p-content-s">
+                       <b>Subscribe to our Daily UX mailing list</b> for exclusive insights, inspiration, and the latest UX trends.
+                    </p>
+                </div>
+                <div>
+                    <form class="form" name="subscribe" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="subscribe" />
+                        <p>
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required />
+                        </p>
+                        <p>
+                            <button class="login-btn" type="submit">Subscribe</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </aside>        
+
+    <article class="article rounded-corners">
+        <h4>Welcome to Unique Ux</h4>
+        <p class="p-content">
+            Embark on a journey beyond the ordinary with Unique Ux. We're here for those who believe in the power of curiosity, the seekers, and the learners. For those who see the world not just as it is, but as it could be. 
+        </p>
+        <p class="p-content">
+            This is more than a community; it's a space for exploration and growth. At Unique Ux, we celebrate the questioners, the door-openers, and the out-of-the-box thinkers.
+        </p>
+        <p class="p-content">
+            Our mission is simple yet profound: to empower you with knowledge and inspire you to apply it constructively and creatively. From music theory and poetry to UX writing and AI input architecture, and even deeper into more complex topics like convolutional humanities, subversive propaganda, and sentiment analysis, we delve into the heart and reshape the ethos of the digital world.
+        </p>
+        <p class="p-content">
+            Guided by honesty, trust, compassion, faith, awareness, meekness, strength, and health, we are crafting a digital landscape that reflects our shared vision of harmony.
+        </p>
+        <p class="p-content">
+            This journey requires courage and an unquenchable thirst for knowledge. Are you ready to challenge the status quo and create a lasting impact?
+        </p>
+        <br>
+    </div>
+    </article>
 </Layout>
 
 <style>

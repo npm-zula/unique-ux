@@ -1,0 +1,37 @@
+/* CONTAINERS */
+
+.container {
+    grid-column: 1 / 5;
+    column-gap: 16px;
+    padding-block: 24px;
+  }
+  
+  @media screen and (min-width: 576px) {
+    .container {
+      padding-inline: 1em;
+      grid-column: 1 / 13;
+      max-width: 80rem;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .container {
+      grid-column: 1 / 13;
+      grid-row: 2 / 2;
+      background-color: none;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .container {
+      grid-column: 1 / 13;
+      grid-row: 1 / 2;
+      background-color: none;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .container {
+      grid-column: 1 / 13;
+      grid-row: 1 / 2;
+      background-color: none;
+    }
+  }

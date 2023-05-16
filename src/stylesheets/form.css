@@ -1,0 +1,70 @@
+.form {
+    max-width: 600px;
+    width: 100%;
+    display: grid;
+    margin-inline: 8px;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    align-self: center;
+    gap: 4px;
+    padding: 12px;
+    background-color: var(--medium);
+  }
+  
+  @media screen and (min-width: 576px) {
+    .form {
+      width: 100%;
+      padding: 8px;
+      background-color: var(--medium);
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .form {
+      height: 100%;
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  label {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: min-content;
+    color: white;
+  }
+  
+  input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    min-width: none;
+    color: white;
+    padding: 8px;
+    background-color: var(--light);
+  }
+
+  select {
+    color: white;
+    background-color: var(--light);
+    padding: 8px;
+  }
+
+  textarea {
+    color: white;
+    background-color: var(--light);
+    padding: 8px;
+    width: 100%;
+  }
+
+  .button-text {
+    width: 100%;
+    background-color: var(--btn);
+    border: none;
+    padding: 8px;
+    margin-top: 8px;
+    color: white;
+    border-radius: 4px;
+  }

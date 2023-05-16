@@ -1,0 +1,73 @@
+summary {
+    border: 1px solid white;
+    border-radius: 4px;
+    outline: none;
+    padding: .5rem;
+    display: block;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .8px;
+    background: var(--midtone);
+    padding-left: 1rem;
+    position: relative;
+    cursor: pointer;
+  }
+
+  details {
+    width: auto;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: .5rem;
+    background: var(--medium);
+  }
+
+  .details-container {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    padding: 16px 16px;
+    border-radius: 8px;
+    padding-top: 16px;
+    background-color: var(--light);
+  }
+
+  details summary::-webkit-details-marker {
+    display:none;
+  }
+
+  details[open] > summary:before {
+    transform: rotate(90deg);
+    animation: open .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    
+  }
+
+  summary:before {
+    content: '';
+    border-width: .4rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 1rem;
+    right:.51rem;
+    transform: rotate(-0.25turn);
+    transform-origin: .2rem 50%;
+    transition: .28s transform ease;
+    
+  }
+
+  .examples {
+    position: relative;
+  }
+
+  .examples > .p-content-s {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input-adjustment {
+    border: none;
+    width: 94%;
+    background-color: var(--medium);
+  }

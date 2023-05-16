@@ -1,0 +1,31 @@
+.container-full {
+    grid-column: 1 / 5;
+    text-align: left;
+    background-color: none;
+  }
+
+  @media screen and (min-width: 576px) {
+    .container-full {
+      grid-column: 1 / 9;
+      background-color: none;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .container-full {
+      grid-column: 1 / 13;
+      background-color: none;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .container-full {
+      grid-column: 1 / 13;
+      background-color: none;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .container-full {
+      grid-column: 1 / 13;
+      background-color: none;
+    }
+  }

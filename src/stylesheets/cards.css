@@ -1,0 +1,29 @@
+.card-services {
+    font-size: 21px;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-color: transparent;
+}
+
+.card-services> button {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-inline: 8px;
+    margin-inline: 4px;
+    margin-block: 16px;
+    border-radius: 2px;
+    outline: 1px solid var(--btn);
+    background-color: transparent;
+    color: var(--clr-white);
+}
+
+.card-service-category {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-inline: 8px;
+    margin-inline: 4px;
+    margin-block: 16px;
+    border-radius: 2px;
+    outline: 1px solid var(--btn);
+    background-color: transparent;
+    color: var(--clr-white);
+}

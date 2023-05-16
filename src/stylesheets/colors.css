@@ -1,0 +1,16 @@
+:root {
+    --dark: #202123;
+    --medium: #181818;
+    --light: #3c3d44;
+    --btn: #535BCC;
+    --link: #FFFF00;
+    --clr-white: #f6f2f5;
+}
+
+.yellow {
+    color: #FFFF00;
+}
+
+.white {
+    color: white;
+}

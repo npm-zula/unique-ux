@@ -1,0 +1,39 @@
+.details-container-c {
+	position: relative;
+	text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.copy-content {
+	background-color: var(--dark);
+	border-radius: 5px;
+	color: #fff;
+    padding: .5rem;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.copy-content::after {
+	content: "";
+    width: 24px;
+    height: 24px;
+	color: #000;
+	background-image: url(/imgs/copy-clip.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+}
+
+.textarea {
+	resize: none;
+}
+
+.copy-text {
+  margin-right: 24px;
+  padding: 0px;
+  font-size: 16px;
+}

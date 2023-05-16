@@ -1,0 +1,41 @@
+article {
+    grid-column: 1 / 5;
+    text-align: left;
+    background-color: transparent;
+    padding: 4px;
+  }
+
+  @media screen and (min-width: 576px) {
+    article {
+      grid-column: 1 / 9;
+      background-color: var(--dark);
+    }
+  }
+
+  @media screen and (min-width: 906px) {
+    article{
+      grid-column: 1 / 13;
+      background-color: var(--dark);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    article{
+      grid-column: 1 / 9;
+      background-color: var(--dark);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    article {
+      grid-column: 1 / 9;
+      background-color: var(--dark);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    article {
+      grid-column: 1 / 9;      
+      text-align: left;
+      background-color: var(--dark);
+    }
+  }

@@ -1,0 +1,14 @@
+.success-message {
+    grid-column: 1 / 13;
+  }
+  
+  .success-message h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .success-message p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  
