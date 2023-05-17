@@ -1,6 +1,8 @@
 ---
 
+import Navigation from '../js/navigation.js';
 ---
+
 
 <div>
     <nav id="navigation" class="navigation navigation-justified">        
@@ -47,3 +49,13 @@
             </ul> 
     </nav>
 </div>
+
+
+<script is:inline src="/navigation.js"></script>
+
+<script is:inline>
+      var navigation = new Navigation(document.getElementById("navigation"), {
+    });
+
+    console.log(Navigation);
+</script>
