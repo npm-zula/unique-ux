@@ -1,57 +1,157 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import IndexHead from '../components/Index_head.astro';
-
+import Layout from "../layouts/Layout.astro";
+import IndexHead from "../components/Index_head.astro";
 ---
 
 <Layout title="Unique UX">
-	<IndexHead />
+    <IndexHead />
 
     <main class="rounded-corners">
         <aside class="padding-16">
             <div class="rounded-corners">
                 <div class="margin-bottom-16">
                     <p class="p-content-s">
-                       <b>Subscribe to our Daily UX mailing list</b> for exclusive insights, inspiration, and the latest UX trends.
+                        <b>Subscribe to our Daily UX mailing list</b> for exclusive
+                        insights, inspiration, and the latest UX trends.
                     </p>
                 </div>
                 <div>
-                    <form class="form" name="subscribe" method="POST" data-netlify="true">
-                        <input type="hidden" name="form-name" value="subscribe" />
+                    <form
+                        class="form"
+                        name="subscribe"
+                        method="POST"
+                        data-netlify="true"
+                    >
+                        <input
+                            type="hidden"
+                            name="form-name"
+                            value="subscribe"
+                        />
                         <p>
                             <label for="email">Your Email:</label>
-                            <input type="email" id="email" name="email" required />
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
                         </p>
                         <p>
-                            <button class="login-btn" type="submit">Subscribe</button>
+                            <button class="login-btn" type="submit"
+                                >Subscribe</button
+                            >
                         </p>
                     </form>
                 </div>
             </div>
-        </aside>        
+        </aside>
 
-    <article class="article rounded-corners">
-        <h4>Welcome to Unique Ux</h4>
-        <p class="p-content">
-            Embark on a journey beyond the ordinary with Unique Ux. We're here for those who believe in the power of curiosity, the seekers, and the learners. For those who see the world not just as it is, but as it could be. 
-        </p>
-        <p class="p-content">
-            This is more than a community; it's a space for exploration and growth. At Unique Ux, we celebrate the questioners, the door-openers, and the out-of-the-box thinkers.
-        </p>
-        <p class="p-content">
-            Our mission is simple yet profound: to empower you with knowledge and inspire you to apply it constructively and creatively. From music theory and poetry to UX writing and AI input architecture, and even deeper into more complex topics like convolutional humanities, subversive propaganda, and sentiment analysis, we delve into the heart and reshape the ethos of the digital world.
-        </p>
-        <p class="p-content">
-            Guided by honesty, trust, compassion, faith, awareness, meekness, strength, and health, we are crafting a digital landscape that reflects our shared vision of harmony.
-        </p>
-        <p class="p-content">
-            This journey requires courage and an unquenchable thirst for knowledge. Are you ready to challenge the status quo and create a lasting impact?
-        </p>
-        <br>
-    </div>
-    </article>
+        <article class="article rounded-corners">
+            <h4>Welcome to Unique Ux</h4>
+            <p class="p-content">
+                Embark on a journey beyond the ordinary with Unique Ux. We're
+                here for those who believe in the power of curiosity, the
+                seekers, and the learners. For those who see the world not just
+                as it is, but as it could be.
+            </p>
+            <p class="p-content">
+                This is more than a community; it's a space for exploration and
+                growth. At Unique Ux, we celebrate the questioners, the
+                door-openers, and the out-of-the-box thinkers.
+            </p>
+            <p class="p-content">
+                Our mission is simple yet profound: to empower you with
+                knowledge and inspire you to apply it constructively and
+                creatively. From music theory and poetry to UX writing and AI
+                input architecture, and even deeper into more complex topics
+                like convolutional humanities, subversive propaganda, and
+                sentiment analysis, we delve into the heart and reshape the
+                ethos of the digital world.
+            </p>
+            <p class="p-content">
+                Guided by honesty, trust, compassion, faith, awareness,
+                meekness, strength, and health, we are crafting a digital
+                landscape that reflects our shared vision of harmony.
+            </p>
+            <p class="p-content">
+                This journey requires courage and an unquenchable thirst for
+                knowledge. Are you ready to challenge the status quo and create
+                a lasting impact?
+            </p>
+            <br />
+        </article>
+    </main>
 </Layout>
 
 <style>
+    .form {
+        max-width: 600px;
+        width: 100%;
+        display: grid;
+        margin-inline: 8px;
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+        align-self: center;
+        gap: 4px;
+        padding: 12px;
+        background-color: var(--medium);
+    }
 
+    @media screen and (min-width: 576px) {
+        .form {
+            width: 100%;
+            padding: 8px;
+            background-color: var(--medium);
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .form {
+            height: 100%;
+            width: 100%;
+            padding: 12px;
+        }
+    }
+
+    label {
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        height: min-content;
+        color: white;
+    }
+
+    input {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        min-width: none;
+        color: white;
+        padding: 8px;
+        background-color: var(--light);
+    }
+
+    select {
+        color: white;
+        background-color: var(--light);
+        padding: 8px;
+    }
+
+    textarea {
+        color: white;
+        background-color: var(--light);
+        padding: 8px;
+        width: 100%;
+    }
+
+    .button-text {
+        width: 100%;
+        background-color: var(--btn);
+        border: none;
+        padding: 8px;
+        margin-top: 8px;
+        color: white;
+        border-radius: 4px;
+    }
 </style>

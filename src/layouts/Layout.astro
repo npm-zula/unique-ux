@@ -1,67 +1,62 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 
-import Navbar from '../components/Navbar.astro';
+import Navbar from "../components/Navbar.astro";
 
-import '../stylesheets/article.css';
-import '../stylesheets/aside.css';
-import '../stylesheets/blog.css';
-import '../stylesheets/btns.css';
-import '../stylesheets/cards.css';
-import '../stylesheets/colors.css';
-import '../stylesheets/container-full.css';
-import '../stylesheets/container.css';
-import '../stylesheets/copy-text.css';
-import '../stylesheets/daily-ux.css';
-import '../stylesheets/details.css';
-import '../stylesheets/form.css';
-import '../stylesheets/hero.css';
-import '../stylesheets/login.css';
-import '../stylesheets/main.css';
-// import '../stylesheets/navbar.css';
-import '../stylesheets/navigation.css';
-import '../stylesheets/success.css';
-import '../stylesheets/type.css';
-import '../stylesheets/utils.css';
-
+import "../stylesheets/article.css";
+import "../stylesheets/aside.css";
+import "../stylesheets/blog.css";
+import "../stylesheets/btns.css";
+import "../stylesheets/cards.css";
+import "../stylesheets/colors.css";
+import "../stylesheets/container-full.css";
+import "../stylesheets/container.css";
+import "../stylesheets/copy-text.css";
+import "../stylesheets/daily-ux.css";
+import "../stylesheets/details.css";
+import "../stylesheets/form.css";
+import "../stylesheets/hero.css";
+import "../stylesheets/login.css";
+import "../stylesheets/main.css";
+import "../stylesheets/navigation.css";
+import "../stylesheets/success.css";
+import "../stylesheets/type.css";
+import "../stylesheets/utils.css";
 ---
-
-
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-        <script src="../js/navigation.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <script src="../js/navigation.js"></script>
 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-		<title>{title}</title>
-	</head>
-	<body>
-		<Navbar />
-		<slot />
-	</body>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+  </body>
 </html>
 
 <!-- <script src="../js/navigation.js" ></script> -->
 
 <script>
-       var navigation = new Navigation(document.getElementById("navigation"), {
-        overlayColor: "#31A6FF"
-    });
+  var navigation = new Navigation(document.getElementById("navigation"), {
+    overlayColor: "#31A6FF",
+  });
 </script>
 
-
 <script is:inline>
-
-        (function (root, factory) {
+(function (root, factory) {
   var pluginName = "Navigation";
 
   if (typeof define === "function" && define.amd) {
@@ -87,10 +82,10 @@ import '../stylesheets/utils.css';
     scrollSpySpeed: 1000,
     scrollSpyOffset: 0,
     landscapeClass: "navigation-landscape",
-    onInit: function () {},
-    onLandscape: function () {},
-    onShowOffCanvas: function () {},
-    onHideOffCanvas: function () {},
+    onInit: function () { },
+    onLandscape: function () { },
+    onShowOffCanvas: function () { },
+    onHideOffCanvas: function () { },
   };
 
   // Merge defaults with user options
@@ -376,7 +371,9 @@ import '../stylesheets/utils.css';
             "submenu-indicator"
           ).length > 0
         ) {
-          submenus[i].previousElementSibling.lastElementChild.classList.remove(
+          submenus[
+            i
+          ].previousElementSibling.lastElementChild.classList.remove(
             "is-active"
           );
         }
@@ -393,7 +390,8 @@ import '../stylesheets/utils.css';
             if (e.target.parentNode.classList.contains("is-active")) {
               e.target.parentNode.classList.remove("is-active");
               if (
-                e.target.getElementsByClassName("submenu-indicator").length > 0
+                e.target.getElementsByClassName("submenu-indicator").length >
+                0
               ) {
                 e.target.lastElementChild.classList.remove("is-active");
               }
@@ -404,7 +402,8 @@ import '../stylesheets/utils.css';
               }
               e.target.parentNode.className += " is-active";
               if (
-                e.target.getElementsByClassName("submenu-indicator").length > 0
+                e.target.getElementsByClassName("submenu-indicator").length >
+                0
               ) {
                 e.target.lastElementChild.className += " is-active";
               }
@@ -489,7 +488,8 @@ import '../stylesheets/utils.css';
               var coords = getPosition(e.target.lastElementChild);
               if (
                 e.clientX < coords.x ||
-                e.clientX > coords.x + e.target.lastElementChild.offsetWidth ||
+                e.clientX >
+                coords.x + e.target.lastElementChild.offsetWidth ||
                 e.clientY < coords.y ||
                 e.clientY > coords.y + e.target.lastElementChild.offsetHeight
               ) {
@@ -536,7 +536,7 @@ import '../stylesheets/utils.css';
       for (var i = 0; i < submenus.length; i++) {
         if (
           submenus[i].previousElementSibling.offsetLeft +
-            submenus[i].offsetWidth >
+          submenus[i].offsetWidth >
           navWidth
         ) {
           submenus[i].style.right = 0;
@@ -753,7 +753,10 @@ import '../stylesheets/utils.css';
           for (var i = 0; i < elements.length; i++) {
             var current = elements[i];
 
-            if (position.top >= current.top && position.top < current.bottom) {
+            if (
+              position.top >= current.top &&
+              position.top < current.bottom
+            ) {
               var hash = current.hash;
 
               link = findLink(links, hash);
@@ -784,10 +787,4 @@ import '../stylesheets/utils.css';
 
   return Plugin;
 });
-
-</script> 
-
-
-
-
-
+</script>
