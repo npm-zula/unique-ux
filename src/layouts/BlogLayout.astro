@@ -4,13 +4,20 @@ import Layout from "./Layout.astro";
 
 const {frontmatter} = Astro.props;
 
-const {title, description, image, headers} = frontmatter;
+const {title} = frontmatter;
 
+const posts = await Astro.glob('../pages/blog/chatgpt.md');
+
+const post = posts[0];
+
+// const headings = post[0].getHeadings();
+const headings = post.getHeadings();
+
+// console.log(post.getHeadings())
 ---
 
 
-
-<Layout title="Unique UX">
+<Layout {title}>
     <section class="flex margin-top-32">
     </section>
 
@@ -25,26 +32,123 @@ const {title, description, image, headers} = frontmatter;
                         In This Article
                     </p>
                     <div class="label-medium"></div>
-                    <a class="label-small" href="#introduction">Introduction</a>
-                    <br>
-                    <a class="label-small" href="#what-is-chatgpt">What is ChatGPT?</a>
-                    <br>
-                    <a class="label-small" href="#the-chatgpt-interface">The Interface</a>
-                    <br>
-                    <a class="label-small" href="#basic-navigation">Basic Navigation</a>
-                    <br>
-                    <a class="label-small" href="#basic-prompting">Basic Prompting</a>
-                    <br>
-                    <a class="label-small" href="#input-types">7 ChatGPT Input Types</a>
+                    {headings.slice(0,8).map((heading) => (
+                        heading.depth == 2 &&
+                            <a class="label-small" href={`#${heading.slug}`}>{heading.text}</a>
+                        <br/>
+                    ))}
                 </div>
             </div>
             <div class="line"></div>
             <br>
             <a class="label-small" href="/blog/blog">All Articles</a>
         </aside>
+
         <article class="article rounded-corners">
             <slot/>
         </article>
     </main>
 
 </Layout>
+
+<style is:inline>
+      /* h1 {
+    color: var(--clr-white);
+    font-size: clamp(2.5rem, 7.2vmin, 3.75rem);
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    line-height: clamp(3.6rem, 7.2vmin, 5.75rem);
+    letter-spacing: 0px;
+    margin-top: 0;
+    width: minmax(30ch 70ch);
+  }
+
+  h2 {
+    color: var(--clr-white);
+    font-size: clamp(2rem, 7vmin,  2.625rem);
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;  
+    font-weight: 300;
+    line-height: 3.125rem;
+    margin-bottom: 12px;
+  }
+
+h3 {
+    color: var(--clr-white);
+    font-size: 1.75rem;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;    
+    font-weight: 300;
+    line-height: 2.5rem;
+    max-width: 48ch;
+}
+
+h4 {
+    color: var(--clr-white);
+    font-size: 1.728rem;
+    text-align: left;
+    font-family: 'Lora', 'PT Serif', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', serif;    
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 24px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 8px;
+}
+
+h5 {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  font-family:  'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+h6 {
+  color: var(--clr-white);
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.overline {
+  font-weight: 600;
+  font-size: 1rem;
+  font-family:'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  padding-bottom: 12px;
+  margin-top: 16px;
+  margin-bottom: 0;
+  letter-spacing: 0px;
+  color: var(--clr-white);
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+q {
+    font-style: italic;
+    font-weight: 400;
+} */
+    p {
+    color: var(--clr-white);
+    margin: 0;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: clamp(.875rem, 4vmin, 1.1rem);
+    font-weight: 400;
+    line-height: 1.9;
+    max-width: 80ch;
+    }
+    p:not(.copy-text) {
+        margin-bottom: 1rem;
+        /* text-shadow: 0px 4px 4px rgba(0, 213, 255, 0.34); */
+    }
+</style>

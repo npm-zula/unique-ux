@@ -1,8 +1,13 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "ChatGPT: Beginner Prompting"
-headers: Introduction, What Will you Gain by Reading This Article?, What is chatGPT?, Finding the ChatGPT interface
+url: /blog/chatgpt
+description: Join me, Kyle, your trusty user experience expert, as we delve into the depths of ChatGPT and explore its endless potential.
 ---
+
+ <div class="margin-bottom-16 video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/X8J_RwsaiBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
 
 ## Introduction
 
@@ -40,19 +45,19 @@ The web application is accessible on any device with a browser, so you can take 
 
 Here's what we see on the screen:
 
-![](/imgs/chatGPT Interface.png)
+![](/imgs/chatGPT-Interface.png)
 
 The Sidebar Navigation Menu, on the left: This is where you can create new chat threads, and access any saved threads you have. If you’re just starting you won’t have a chat thread history, but as you can see, I already have made a few examples.
 
-![Take off with Unique UX!](/imgs/ChatGPT New THREAD AREA.png)
+![Take off with Unique UX!](/imgs/ChatGPT-New-THREAD-AREA.png)
 
 Next is the Main Chat Area: This is where you'll input your prompts and see the generated text and code snippets if you have any.
 
-![Take off with Unique UX!](/imgs/ChatGPT Input Area.png)
+![Take off with Unique UX!](/imgs/ChatGPT-Input-Area.png)
 
 Finally is the Settings Area: You can find an FAQ section, as well as some other helpful links.
 
-![Take off with Unique UX!](/imgs/ChatGPT Settings Area.png)
+![Take off with Unique UX!](/imgs/ChatGPT-Settings-Area.png)
 
 If you're on Mobile: Click the menu icon on mobile to find the same thread history and settings. The interface is exactly the same on mobile. You just have to tap the menu icon first. You can also enable dark mode, which is a personal favorite of mine.
 
@@ -80,122 +85,226 @@ Think of it as being the key to unlocking ChatGPT's true potential. So, let's di
 
 These inputs are like the secret sauce that will make your ChatGPT outputs 10 times more productive, useful and specific. Now let's define these terms as it relates to ChatGPT.
 
-Goal Input:
-
-**Goal Input:** is used to specify the desired outcome or goal of the task, such as generating a certain type of text or answering a specific question.
-
-**Goal Input Examples:**
-
-Goal: Write a series containing twelve short stories and get it marketed and distributed.
-
-Goal: I need to make an extra $2000 a month.
-
-Goal: I'm working to improve my health and productivity.
-
-**More info:**
-
-The goal is important as it sets the direction for the task, and provides a clear outcome for the model to work towards. The goal input is essentially the overarching purpose or objective of the task. An effective way to use the goal input is to start with a broad goal and then break it down into smaller, more specific goals as you progrees through the thread. This allows you to focus on the most important aspects of the task while still maintaining a clear overall objective.
-
-Prompt Input:
-
-**Prompt Input** is the primary input provided to the model, and serves as the most specific task that the model is supposed to perform.
-
-**Prompt Input Examples:**
-
-Prompt: Create a 750 word science fiction story titled: 'Digimon IRL: Attack of the AI'
-
-Prompt: Create a top 10 list on ways to earn extra income, ranked in order of effectiveness.
-
-Prompt: Write a list of 10 quotes about both physical fitness and mental attitude.
-
-**More info:**
-
-The prompt input serves as a guide for the model, providing it with clear instructions on what it should be doing. When working with prompt input, it's important to be mindful of the level of specificity, as too much or too little can impact the model's performance. A good practice is to test different variations of prompt inputs, and evaluate the results to find the most effective one for a given task.
-
-Example Input:
-
-**Example Input** This type of input is used to provide **example or sample data** to the model, which can be used to guide the model's output and make it more consistent with a specific style or format.
-
-**Example Input Examples:**
-
-Example:  
-**Plot:** The year is 2084, AI have manifested into physical reality and are destroying the world.  
-**perspective:** We see the story through the eyes of a young girl named Ella.  
-**Style:** The story is written in the style of Stephen King.  
-**Theme:** Betrayal  
-**Genere:** Science Fiction
-
-Example:  
-**Weapon Title:** Steel Sword  
-**Weapon description:** This steel sword was forged in the Firey Hammer blacksmith shop of Asmonveld.  
-**weapon class:** sword  
-**Material:** steel  
-**attack:** 23  
-**Durability:** 7  
-**Range:** 2
-
-**More info:**
-
-Example input is a powerful tool for providing context and guidance to the model, allowing it to generate output that is consistent with a specific style or format. This type of input can be used to guide the model's output in a variety of ways, such as providing sample data for language translation tasks, or giving examples of a specific style for creative writing tasks. It is also useful for providing constraints on the output, such as a specific genre or theme, to ensure that the generated content aligns with the desired outcome. With example input, it's important to be mindful of the level of detail provided, as too much or too little can impact the model's performance. A good practice is to test different variations of example input, and evaluate the results to find the most effective one for a given task.
-
-Constraint Input:
-
-**Constraints Input** is used to provide specific constraints or rules that the model should follow when generating its output. For example, if generating a text, it could be the length, or if generating a dialogue, it could be the persona.
-
-**Constraint Input Examples:**
-
-Constraints:  
-No dragons;  
-No wizards;  
-No Trolls;
-
-Constraints:  
-Must apply two spaces after each period;  
-Paragraphs can contain a maximum of 3 secentences each;  
-Must be written in a professional tone;
-
-**More info:**
-
-When working with constraints input, it's important to be clear and specific about the rules that the model should follow. The more specific the constraints, the more focused and relevant the output will be. It's also important to test different variations of constraints input and evaluate the results to find the most effective set of rules for a given task. Additionally, it's important to consider the balance between constraining the model too much and not providing enough guidance, as this can also impact the model's performance. Combining constraints input with other input types, such as goal input or example input, can help provide a more well-rounded and effective prompt for the model to work with.
-
-Feedback Input:
-
-**Feedback Input** is used to provide feedback or evaluation data to the model, which can be used to improve its performance over time.
-
-**Feedback Input Examples:**
-
-Feedback: The story 'Digimon IRL: Attack of the AI' is too similar to existing franchise, please make it more unique.
-
-Feedback: The list on ways to earn extra income could use more specific examples for each method.
-
-Feedback: The quotes about both physical fitness and mental attitude are well written but could use more diversity in the authors.
-
-**More info:**
-
-More info: Feedback input is an important tool for fine-tuning the model's performance and can be used to provide guidance and improve the overall quality of the output generated by the model. It can be used to address specific issues or areas of improvement that have been identified. Additionally, collecting and analyzing feedback over time can also help identify patterns and trends that can be used to further improve the model's performance.
-
-Adversarial Input:
-
-**Adversarial Input** is used to test the model's robustness by providing it with inputs that are designed to be difficult or misleading.
-
-**More info:**
-
-Adversarial Input is a powerful tool for evaluating the robustness of a model, as it allows you to test the model's ability to handle inputs that are designed to be difficult or misleading. This type of input can help identify weaknesses in the model and inform future improvements. Examples of adversarial inputs include providing a model with a text prompt that uses a lot of technical jargon, or providing a model with a list of quotes that are out of context. It is important to note that when using adversarial inputs, it is important to clearly define the parameters of the test and interpret the results with caution, as the model's performance on adversarial inputs may not necessarily reflect its performance on real-world inputs.
-
-Initial Input (Easy Template)
-
-**Initial Input** is the first input provided to the model, and it serves as a starting point for the model's output. This input can be a simple text prompt or a more complex query, depending on the task.
-
-**Initial Input Template:**
-
-Goal:  
-Prompt:  
-Example:  
-Constraints:
-
-**More info:**
-
-Initial inputs are important when working with chatGPT because they set the foundation for the model's output. By providing the model with a clear and well-defined starting point, we can ensure that the output is relevant and on-topic. This is particularly important when working on broad topic generation or ideation tasks, as it helps to guide the model's output and keep it focused on the desired topic. Additionally, providing a specific and clear initial input can also help to improve the performance of the model, as it allows the model to better understand the task at hand and generate more accurate and useful output.
+<details>
+                    <summary class="label-medium">Goal Input:</summary>
+                        <div class="details-container">          
+                            <p class="copy-text">
+                                <strong>Goal Input:</strong> is used to specify the desired outcome or goal of the task, such as generating a certain type of text or answering a specific question.
+                            </p>
+                            <p class="copy-text margin-top-16 margin-bottom-4"><b>Goal Input Examples:</b></p>
+                            <section class="details-container-c">
+                                <div class="copy-content">
+                                    <p class="copy-text">
+                                        Goal: Write a series containing twelve short stories and get it marketed and distributed.
+                                    </p>
+                                </div>
+                        </section>
+                        <section class="details-container-c">
+                            <div class="copy-content">
+                                <p class="copy-text">
+                                    Goal: I need to make an extra $2000 a month.
+                                </p>
+                            </div>
+                        </section>
+                                                <section class="details-container-c">
+                            <div class="copy-content">
+                                <p class="copy-text">
+                                   Goal: I'm working to improve my health and productivity.
+                                </p>
+                            </div>
+                        </section>
+                        <p class="copy-text margin-top-16"><b>More info:</b></p>
+                        <p class="margin-top-4 copy-text">
+                            The goal is important as it sets the direction for the task, and provides a clear outcome for the model to work towards. The goal input is essentially the overarching purpose or objective of the task. An effective way to use the goal input is to start with a broad goal and then break it down into smaller, more specific goals as you progrees through the thread. This allows you to focus on the most important aspects of the task while still maintaining a clear overall objective.
+                        </p>
+                </div>
+</details>
+<details>
+            <summary class="label-medium">Prompt Input:</summary>
+                <div class="details-container">
+                    <p class="copy-text">
+                        <strong>Prompt Input</strong> is the primary input provided to the model, and serves as the most specific task that the model is supposed to perform.
+                    </p>
+                    <p class="copy-text margin-top-margin-bottom-4"><b>Prompt Input Examples:</b>
+                    </p>
+                    <section class="details-container-c">
+                        <div class="copy-content">
+                            <p class="copy-text">
+                                Prompt: Create a 750 word science fiction story titled: 'Digimon IRL: Attack of the AI'
+                            </p>
+                        </div>
+                    </section>
+                    <section class="details-container-c">
+                        <div class="copy-content">
+                            <p class="copy-text">
+                                Prompt: Create a top 10 list on ways to earn extra income, ranked in order of effectiveness.
+                            </p>
+                        </div>
+                    </section>
+                                        <section class="details-container-c">
+                        <div class="copy-content">
+                            <p class="copy-text">
+                               Prompt: Write a list of 10 quotes about both physical fitness and mental attitude.
+                            </p>
+                        </div>
+                    </section>
+                    <p class="copy-text margin-top-16"><b>More info:</b></p>
+                        <p class="copy-text">
+                            The prompt input serves as a guide for the model, providing it with clear instructions on what it should be doing. When working with prompt input, it's important to be mindful of the level of specificity, as too much or too little can impact the model's performance. A good practice is to test different variations of prompt inputs, and evaluate the results to find the most effective one for a given task.
+                    </p>
+    </div>
+</details>
+        <details>
+            <summary class="label-medium">Example Input:</summary>
+                <div class="details-container">
+                    <p class="copy-text">
+                        <strong>Example Input</strong> This type of input is used to provide <strong>example or sample data</strong> to the model, which can be used to guide the model's output and make it more consistent with a specific style or format.
+                    </p>
+                    <p class="copy-text margin-top-16 margin-bottom-4"><b>Example Input Examples:</b></p>
+                    <section class="details-container-c">
+                        <div class="copy-content">
+                            <p class="copy-text">
+                                Example: <br>
+                                <b>Plot:</b> The year is 2084, AI have manifested into physical reality and are destroying the world.<br>
+                                <b>perspective:</b>  We see the story through the eyes of a young girl named Ella. <br>
+                                <b>Style:</b> The story is written in the style of Stephen King. <br>
+                                <b>Theme:</b> Betrayal <br>
+                                <b>Genere:</b> Science Fiction 
+                            </p>
+                        </div>
+                    </section>
+                    <section class="details-container-c">
+                        <div class="copy-content">
+                            <p class="copy-text">
+                                Example: <br>
+                                <b>Weapon Title:</b> Steel Sword 
+                                <br>
+                               <b>Weapon description:</b> This steel sword was forged in the Firey Hammer blacksmith shop of Asmonveld.
+                                <br>  
+                                <b>weapon class:</b> sword
+                                <br> 
+                                <b>Material:</b> steel
+                                <br> 
+                                <b>attack:</b> 23
+                                <br> 
+                                <b>Durability:</b> 7
+                                <br>
+                                <b>Range:</b> 2
+                            </p>
+                        </div>
+                    </section>
+                        <p class="copy-text margin-top-16"><b>More info:</b></p>
+                        <p class="copy-text">
+                            Example input is a powerful tool for providing context and guidance to the model, allowing it to generate output that is consistent with a specific style or format. This type of input can be used to guide the model's output in a variety of ways, such as providing sample data for language translation tasks, or giving examples of a specific style for creative writing tasks. It is also useful for providing constraints on the output, such as a specific genre or theme, to ensure that the generated content aligns with the desired outcome. With example input, it's important to be mindful of the level of detail provided, as too much or too little can impact the model's performance. A good practice is to test different variations of example input, and evaluate the results to find the most effective one for a given task.
+                    </p>
+                </div>
+</details>
+<details>
+    <summary class="label-medium">Constraint Input:</summary>
+                <div class="details-container">
+                    <p class="copy-text">
+                        <strong>Constraints Input</strong> is used to provide specific constraints or rules that the model should follow when generating its output. For example, if generating a text, it could be the length, or if generating a dialogue, it could be the persona.
+                    </p>
+                    <p class="copy-text margin-top-16 margin-bottom-4"><b>Constraint Input Examples:</b></p>
+                    <section class="details-container-c">
+                        <div class="copy-content">
+                            <p class="copy-text">
+                                Constraints: <br> 
+                                No dragons; <br>
+                                No wizards; <br>
+                                No Trolls; 
+                            </p>
+                        </div>
+                    </section>
+                    <section class="details-container-c">
+                        <div class="copy-content">
+                            <p class="copy-text">
+                                Constraints: <br> 
+                                Must apply two spaces after each period; <br>
+                                Paragraphs can contain a maximum of 3 secentences each; <br>
+                                Must be written in a professional tone; <br>
+                            </p>
+                        </div>
+                    </section>
+                        <p class="copy-text margin-top-16"><b>More info:</b></p>
+                        <p class="copy-text">
+                            When working with constraints input, it's important to be clear and specific about the rules that the model should follow. The more specific the constraints, the more focused and relevant the output will be. It's also important to test different variations of constraints input and evaluate the results to find the most effective set of rules for a given task. Additionally, it's important to consider the balance between constraining the model too much and not providing enough guidance, as this can also impact the model's performance. Combining constraints input with other input types, such as goal input or example input, can help provide a more well-rounded and effective prompt for the model to work with.
+                    </p>
+                </div>
+</details>
+        <details>
+            <summary class="label-medium">Feedback Input:</summary>
+                <div class="details-container">
+                    <p class="copy-text">
+                        <strong>Feedback Input</strong> is used to provide feedback or evaluation data to the model, which can be used to improve its performance over time.
+                    </p>
+                    <p class="copy-text margin-top-16 margin-bottom-4"><b>Feedback Input Examples:</b></p>
+                    <section class="details-container-c">
+                        <div class="copy-content">
+                            <p class="copy-text">
+                                Feedback: The story 'Digimon IRL: Attack of the AI' is too similar to existing franchise, please make it more unique.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="details-container-c">
+                        <div class="copy-content">
+                            <p class="copy-text">
+                                Feedback: The list on ways to earn extra income could use more specific examples for each method.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="details-container-c">
+                        <div class="copy-content">
+                            <p class="copy-text">
+                                Feedback: The quotes about both physical fitness and mental attitude are well written but could use more diversity in the authors.
+                            </p>
+                        </div>
+                    </section>
+                        <p class="copy-text margin-top-16"><b>More info:</b></p>
+                        <p class="copy-text">
+                            More info: Feedback input is an important tool for fine-tuning the model's performance and can be used to provide guidance and improve the overall quality of the output generated by the model. It can be used to address specific issues or areas of improvement that have been identified. Additionally, collecting and analyzing feedback over time can also help identify patterns and trends that can be used to further improve the model's performance.
+                        </p>
+                </div>
+</details>
+        <details>
+            <summary class="label-medium">Adversarial Input:</summary>
+                <div class="details-container">
+                    <p class="copy-text">
+                        <strong>Adversarial Input</strong> is used to test the model's robustness by providing it with inputs that are designed to be difficult or misleading.
+                    </p>
+                        <p class="copy-text margin-top-16"><b>More info:</b></p>
+                        <p class="copy-text">
+                            Adversarial Input is a powerful tool for evaluating the robustness of a model, as it allows you to test the model's ability to handle inputs that are designed to be difficult or misleading. This type of input can help identify weaknesses in the model and inform future improvements. Examples of adversarial inputs include providing a model with a text prompt that uses a lot of technical jargon, or providing a model with a list of quotes that are out of context. It is important to note that when using adversarial inputs, it is important to clearly define the parameters of the test and interpret the results with caution, as the model's performance on adversarial inputs may not necessarily reflect its performance on real-world inputs.
+                    </p>
+                </div>
+</details>
+        <details>
+            <summary class="label-medium">Initial Input (Easy Template)</summary>
+                <div class="details-container">          
+                    <p class="copy-text">
+                       <strong>Initial Input</strong> is the first input provided to the model, and it serves as a starting point for the model's output. This input can be a simple text prompt or a more complex query, depending on the task.
+                    </p>
+                    <p class="copy-text margin-top-8 margin-bottom-4"><b>Initial Input Template:</b></p>
+                    <section class="details-container-c">
+                        <div class="copy-content">
+                                <p class="copy-text">
+                                    Goal: <br>
+                                    Prompt: <br>
+                                    Example: <br> 
+                                    Constraints: <br>
+                                </p>
+                            </div>
+                    </section>
+                    <p class="copy-text margin-top-8"><b>More info:</b></p>
+                    <p class="margin-top-4 copy-text">
+                        Initial inputs are important when working with chatGPT because they set the foundation for the model's output. By providing the model with a clear and well-defined starting point, we can ensure that the output is relevant and on-topic. This is particularly important when working on broad topic generation or ideation tasks, as it helps to guide the model's output and keep it focused on the desired topic. Additionally, providing a specific and clear initial input can also help to improve the performance of the model, as it allows the model to better understand the task at hand and generate more accurate and useful output.
+                     </p>
+                     <p class="margin-top-8 p-content-s">
+                         
+                     </p>
+                </div>
+</details>
+<br>
 
 ### Combining Input Types (Putting it all together!)
 

@@ -1,6 +1,6 @@
-.blog-summary-options {
+.blog-summary-options{
     display: flex;
-    grid-column: 1 / 13;
+    grid-column: 1 /13;
     padding: 16px;
     gap: 24px;
     width: 100%;
@@ -15,8 +15,7 @@
     }
 
 .blog-details {
-    display: flex;
-    flex-direction: column;
+
     justify-content: center;
 }
 
