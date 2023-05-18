@@ -1,0 +1,50 @@
+---
+
+import Layout from "./Layout.astro";
+
+const {frontmatter} = Astro.props;
+
+const {title, description, image, headers} = frontmatter;
+
+---
+
+
+
+<Layout title="Unique UX">
+    <section class="flex margin-top-32">
+    </section>
+
+    <main class="rounded-corners">
+        <div class="container">
+                <h1>{title}</h1>
+        </div>
+        <aside class="padding-16">
+            <div class="rounded-corners">
+                <div class="margin-bottom-16">
+                    <p>
+                        In This Article
+                    </p>
+                    <div class="label-medium"></div>
+                    <a class="label-small" href="#introduction">Introduction</a>
+                    <br>
+                    <a class="label-small" href="#what-is-chatgpt">What is ChatGPT?</a>
+                    <br>
+                    <a class="label-small" href="#the-chatgpt-interface">The Interface</a>
+                    <br>
+                    <a class="label-small" href="#basic-navigation">Basic Navigation</a>
+                    <br>
+                    <a class="label-small" href="#basic-prompting">Basic Prompting</a>
+                    <br>
+                    <a class="label-small" href="#input-types">7 ChatGPT Input Types</a>
+                </div>
+            </div>
+            <div class="line"></div>
+            <br>
+            <a class="label-small" href="/blog/blog">All Articles</a>
+        </aside>
+        <article class="article rounded-corners">
+            <slot/>
+        </article>
+    </main>
+
+</Layout>
