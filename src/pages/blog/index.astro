@@ -1,39 +1,37 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-
-const posts = await Astro.glob('../blog/*.md');
-
-
+const posts = await Astro.glob("../blog/*.md");
 ---
- 
-<Layout title="About">
 
-    <header class="main">
-        <section class="hero-container">
-            <div class="title-large margin-bottom-8">UX Unboxed</div>
-            <div class="subtitle margin-top-16">
-                Where Art and Technology Converge
-            </div>
-        </section>
-    </header>
-
-<!-- create component for all posts -->
-
-  {posts.map((post) => (
-    <main class="rounded-corners">
-      <div class="blog-summary-options">
-        <a href={post.frontmatter.url}>
-          <div class="blog-details">
-            <h2 class="blog-title">{post.frontmatter.title}</h2>
-            <p class="blog-summary">{post.frontmatter.description}</p>
-          </div>
-        </a>
+<Layout title="Blogs">
+  <header class="main">
+    <section class="hero-container">
+      <div class="title-large margin-bottom-8">UX Unboxed</div>
+      <div class="subtitle margin-top-16">
+        Where Art and Technology Converge
       </div>
-    </main>
-  ))}
+    </section>
+  </header>
 
-<!-- <main class="rounded-corners">
+  <!-- create component for all posts -->
+
+  {
+    posts.map((post) => (
+      <main class="rounded-corners">
+        <div class="blog-summary-options">
+          <a href={post.frontmatter.url}>
+            <div class="blog-details">
+              <h2 class="blog-title">{post.frontmatter.title}</h2>
+              <p class="blog-summary">{post.frontmatter.description}</p>
+            </div>
+          </a>
+        </div>
+      </main>
+    ))
+  }
+
+  <!-- <main class="rounded-corners">
     <div class="blog-summary-options">
         <a href="/blog/ChatGPT-Beginner-to-Advanced.html">
             <div class="blog-icon"/>
@@ -44,14 +42,12 @@ const posts = await Astro.glob('../blog/*.md');
             </a>
     </div>
 </main> -->
-
-
 </Layout>
 
 <style>
-    a {
-        display: flex;
-        padding: 16px;
-        gap: 24px;
-    }
+  a {
+    display: flex;
+    padding: 16px;
+    gap: 24px;
+  }
 </style>
