@@ -24,7 +24,6 @@ const posts = await Astro.glob('../blog/*.md');
     <main class="rounded-corners">
       <div class="blog-summary-options">
         <a href={post.frontmatter.url}>
-          <div class="blog-icon"/>
           <div class="blog-details">
             <h2 class="blog-title">{post.frontmatter.title}</h2>
             <p class="blog-summary">{post.frontmatter.description}</p>
