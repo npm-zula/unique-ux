@@ -1,50 +1,44 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+
 const posts = await Astro.glob('../blog/*.md');
+
+
 ---
  
-<Layout title="Unique Ux Article Select">
+<Layout title="About">
 
     <header class="main">
         <section class="hero-container">
-            <div class="title-large margin-bottom-8">UX WRLD</div>
+            <div class="title-large margin-bottom-8">UX Unboxed</div>
             <div class="subtitle margin-top-16">
                 Where Art and Technology Converge
             </div>
         </section>
     </header>
 
-<!-- create component for all posts -->
+  <!-- create component for all posts -->
 
-{posts.map((post) => (
+  {posts.map((post) => (
   <main class="rounded-corners">
     <article>
       <div class="blog-summary-options">
-        <a href={post.frontmatter.url}>
+      <a href={post.frontmatter.url}>
+        <div class="blog-details">
+          <h2 class="blog-title">{post.frontmatter.title}</h2>
+          <p class="blog-summary">{post.frontmatter.description}</p>
           {post.frontmatter.image && <img src={post.frontmatter.image} alt={post.frontmatter.title} />}
-          <div class="blog-details">
-            <h2 class="blog-title">{post.frontmatter.title}</h2>
-            <p class="blog-summary">{post.frontmatter.description}</p>
-          </div>
-        </a>
+        </div>
+      </a>
     </div>
     </article>
   </main>
 ))}
 
+
 </Layout>
-
 <style>
-
-.blog-title {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0;
-    text-align: left;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
 
 .blog-details {
   justify-content: center;
