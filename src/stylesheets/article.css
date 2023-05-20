@@ -2,7 +2,7 @@ article {
     grid-column: 1 / 5;
     text-align: left;
     background-color: transparent;
-    padding: 4px;
+    padding: .5rem;
   }
 
   @media screen and (min-width: 576px) {
@@ -37,5 +37,6 @@ article {
       grid-column: 1 / 9;      
       text-align: left;
       background-color: var(--dark);
+      padding: 1rem;
     }
   }

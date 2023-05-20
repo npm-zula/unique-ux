@@ -1,17 +1,14 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-
 const posts = await Astro.glob('../blog/*.md');
-
-
 ---
  
-<Layout title="About">
+<Layout title="Unique Ux Article Select">
 
     <header class="main">
         <section class="hero-container">
-            <div class="title-large margin-bottom-8">UX Unboxed</div>
+            <div class="title-large margin-bottom-8">UX WRLD</div>
             <div class="subtitle margin-top-16">
                 Where Art and Technology Converge
             </div>
@@ -20,35 +17,72 @@ const posts = await Astro.glob('../blog/*.md');
 
 <!-- create component for all posts -->
 
-  {posts.map((post) => (
-    <main class="rounded-corners">
+{posts.map((post) => (
+  <main class="rounded-corners">
+    <article>
       <div class="blog-summary-options">
         <a href={post.frontmatter.url}>
+          {post.frontmatter.image && <img src={post.frontmatter.image} alt={post.frontmatter.title} />}
           <div class="blog-details">
             <h2 class="blog-title">{post.frontmatter.title}</h2>
             <p class="blog-summary">{post.frontmatter.description}</p>
           </div>
         </a>
-      </div>
-    </main>
-  ))}
-
-<!-- <main class="rounded-corners">
-    <div class="blog-summary-options">
-        <a href="/blog/ChatGPT-Beginner-to-Advanced.html">
-            <div class="blog-icon"/>
-            <div class="blog-details">
-                <h2 class="blog-title">ChatGPT: Beginner Prompting</h2>
-                <p class="blog-summary">Join me, Kyle, your trusty user experience expert, as we delve into the depths of ChatGPT and explore its endless potential.</p>
-            </div>
-            </a>
     </div>
-</main> -->
-
+    </article>
+  </main>
+))}
 
 </Layout>
 
 <style>
+
+.blog-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.blog-details {
+  justify-content: center;
+}
+
+.blog-summary-options {
+    display: flex;
+    grid-column: 1 /13;
+    padding: 0px;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid transparent;
+    backdrop-filter: blur(42px);
+    border-radius: 8px;
+}
+
+.blog-summary-options:focus, .blog-summary-options:hover {
+    background: radial-gradient(50% 50% at 50% 50%, #2B2C32 0%, #2B2C32 100%);
+}
+
+
+
+.blog-icon {
+    width: 115px;
+    height: 115px;
+    background: url(/imgs/blog-icon.png);
+    }
+
+
+
+.blog-summary {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+}
+
     a {
         display: flex;
         padding: 16px;

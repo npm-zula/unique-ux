@@ -127,8 +127,8 @@
         display: grid;
         place-content: center;
         gap: 24px;
-        padding: 2rem;
-        grid-template-columns: repeat(12, 72px);
+        padding: 1rem;
+        grid-template-columns: repeat(12, 96px);
         grid-auto-flow: column;
         text-align: center;
         background-color: transparent;

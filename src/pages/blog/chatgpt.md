@@ -3,83 +3,89 @@ layout: ../../layouts/BlogLayout.astro
 title: "ChatGPT: Beginner Prompting"
 url: /blog/chatgpt
 description: Join me, Kyle, your trusty user experience expert, as we delve into the depths of ChatGPT and explore its endless potential.
+image: /imgs/blog-image-blue.svg
 ---
 
- <div class="margin-bottom-16 video-container">
+ <!-- <div class="margin-bottom-16 video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/X8J_RwsaiBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
+              </div> -->
 
-## Introduction
+## Embracing the Future: Unveiling the Magic of ChatGPT
 
-Introducing ChatGPT, the revolutionary AI chatbot from OpenAI that's taking the world by storm! With over two million users in just one week, ChatGPT is the hottest thing in tech. But what exactly is it and what can it do? Join me, Kyle, your trusty user experience expert, as we delve into the depths of ChatGPT and explore its endless potential.
+Step into the future with ChatGPT, the phenomenal AI-powered chatbot from OpenAI that's causing seismic ripples in the tech ocean! With a user base that mushroomed to over two million in a fleeting week, ChatGPT has undoubtedly become the crown jewel of the tech industry. So, what's all the buzz about? Allow me, Kyle, your trusty UX Sherpa, to guide you through the captivating labyrinth of ChatGPT and uncover its seemingly boundless capabilities.
 
-From beginner to advanced, we'll uncover the secrets of this powerful tool and discover how it can revolutionize the way we interact with technology.
+Our journey will span from the plains of the basics to the mountain peaks of advanced functionalities, shedding light on the mysterious aura of this potent instrument. We will discover how ChatGPT is transforming our interaction with technology, one conversation at a time.
 
-### What Will you Gain by Reading This Article?
+### Why Should You Invest Your Time in This Article?
 
-In this article, we'll take a deep dive into the world of ChatGPT - the AI chatbot sensation from OpenAI. As a professional UX designer, I'll show you how to navigate the basics of the tool and explore 7 different input types that can help you become a pro at prompting. You'll learn why now is the perfect time to start experimenting with ChatGPT while it's still available for free.
+Dive headfirst with us into the mesmerizing universe of ChatGPT - the AI wunderkind from OpenAI that's redefining communication norms. As an experienced UX maestro, I'll handhold you through the fundamental aspects of the tool while also unveiling 7 distinctive input types that will catapult you to the realm of proficient prompting. You'll discover why the present moment is the golden window to experiment with ChatGPT, especially while it graciously extends its free access.
 
-By the end of this article, you'll have a solid understanding of how to use the OpenAI website and ChatGPT interface, and feel confident in your ability to use the tool for everyday tasks. Whether you're a beginner or an advanced user, you'll find useful information in this article. Use the Table of contents (Right) to skip around on a desktop computer and let's get started!
+By the time you reach the finale of this article, you'll not only possess a robust understanding of navigating the OpenAI website and ChatGPT interface, but you'll also brim with confidence in leveraging the tool for your daily tasks. This treasure trove of information is designed to cater to both neophytes and seasoned users alike. So, make the most of our Table of Contents (on the right on desktop) to navigate through the content as per your preference. Without further ado, let's embark on this thrilling journey!
 
-## What is chatGPT?
+## Decoding chatGPT
 
 (ChatGPT research release)
 
-ChatGPT is a state-of-the-art language model that uses vast amounts of data to predict the next word in a sentence with a high degree of accuracy, resulting in human-like text generation. Developed by OpenAI, a research company dedicated to advancing AI for the benefit of humanity, ChatGPT is the perfect tool for busy professionals looking to improve their workflow or creative minds seeking inspiration.
+ChatGPT is a trailblazing language model that leverages colossal amounts of data to anticipate the succeeding word in a sentence with unparalleled precision, emulating the eloquence of human conversation. Conceived in the labs of OpenAI, a trailblazing entity committed to catalyzing AI development for the betterment of mankind, ChatGPT is an indispensable companion for dynamic professionals seeking workflow optimization and creatives in pursuit of the muse.
 
-ChatGPT was created by OpenAI, OpenAI is a research company that aims to develop and direct artificial intelligence in ways that benefit humanity as a whole.
+ChatGPT, the brainchild of OpenAI, exemplifies the firm's mission of steering artificial intelligence development in ways that amplify collective human prosperity.
 
-Whether you're looking to automate your work or generate new ideas, ChatGPT can help you get more done in less time. So, let's take a closer look at OpenAI website and see how you can use ChatGPT to take your productivity and creativity to the next level.
+Whether you're on a quest to turbocharge your efficiency or germinate innovative ideas, ChatGPT is your trusty sidekick, ready to help you achieve more in less time. Let's venture further into the OpenAI website and unravel how you can harness the power of ChatGPT to turbocharge your productivity and creativity to unprecedented heights.
 
 ## Finding the ChatGPT interface
 
 Okay my tech-savvy friends! Time to fire up that browser and head on over to openai.com. [Open chatGPT from openai.com, then come right back 👈](https://chat.openai.com/)
 
-Once you're on the site, simply click on the "Try ChatGPT" button at the top of the page. Mobile users, don't waste your time searching for ChatGPT on Google Play or Apple App Store, stick to the official OpenAI website.
+## The Art of Basic Prompting
 
-The web application is accessible on any device with a browser, so you can take ChatGPT with you wherever you go. Make sure to click on the right link while searching on search engines like Google. Trust us, you won't regret sticking to the real deal on the OpenAI website.
+As a seasoned explorer of Pre-trained Language Models (PLMs) like ChatGPT, I've embarked on a relentless quest to devise an optimal strategy for prompting - a treasure trove of insights that I'm thrilled to share with you today. ChatGPT is indeed a potent tool, yet like any sophisticated AI model, PLMs such as ChatGPT encounter hurdles when faced with intricate, multi-faceted reasoning tasks.
 
-![Take off with Unique UX!](/imgs/try-chatgpt-full.png)
+Hence, I've organized this article into three layers of complexity—beginner, intermediate, and advanced. To wield the power of ChatGPT effectively and judiciously, it's paramount to decode the inner workings of the model and cultivate a tactical approach to prompting it. This paves the way for comprehending the diverse spectrum of input types. But a question might be simmering in your mind – aren't inputs and prompts identical?
 
-## Basic Navigation
+### Deciphering the Nuances: Input vs. Prompt
 
-Here's what we see on the screen:
+In the realm of pre-trained language models like ChatGPT, input and prompts are often confused as synonyms. However, the two harbor subtle differences. The input is the raw data or information that you feed into the model, while the prompt constitutes the explicit question or task that you assign to the model.
 
-![](/imgs/chatGPT-Interface.png)
+Prompts are a subtype of inputs, embodying a unique form where the input translates into a question or a task. The prompt, typically a textual instruction, outlines the task that the model is expected to execute. It can range from a straightforward request such as "generate a summary of this article" to a complex query like "What are some strategies to bolster employee retention in a small business?".
 
-The Sidebar Navigation Menu, on the left: This is where you can create new chat threads, and access any saved threads you have. If you’re just starting you won’t have a chat thread history, but as you can see, I already have made a few examples.
+In essence, the prompt's mission is to equip the model with the necessary information and context to fabricate an accurate and pertinent output. Conversely, the input serves as the data used by the model to manifest this output.
 
-![Take off with Unique UX!](/imgs/ChatGPT-New-THREAD-AREA.png)
+Thus, although inputs and prompts bear a close relationship, they are not identical. Inputs represent a wider category of information offered to the model, while prompts constitute a specialized variant of input used to delineate the task the model is expected to perform.
 
-Next is the Main Chat Area: This is where you'll input your prompts and see the generated text and code snippets if you have any.
+Consider this analogy: prompts are the keys that ignite the roaring engine of ChatGPT's true potential. So, let's plunge into the depths and acquaint ourselves with the five fundamental input types that will catapult you into the elite league of ChatGPT pros in no time:
 
-![Take off with Unique UX!](/imgs/ChatGPT-Input-Area.png)
+## Harnessing System Messages
+Hello again, and welcome back to our exciting journey into the world of ChatGPT. As a UX designer at UXWRLD, my passion lies in exploring cutting-edge technologies and ensuring that their potential is harnessed in the most user-friendly ways possible. Today, I'm here to guide you through another vital aspect of ChatGPT's advanced features - system messages.
 
-Finally is the Settings Area: You can find an FAQ section, as well as some other helpful links.
+System messages are a form of input that can drastically affect the direction, tone, and context of the text generated by GPT-4. Their power lies in their ability to provide a backstory or context to the AI model, significantly influencing the model's responses. But before we delve into that, let's do a quick recap of what GPT-4 is and how it works.
 
-![Take off with Unique UX!](/imgs/ChatGPT-Settings-Area.png)
+### What are System Messages?
+Now, you may wonder what exactly are system messages and how they can help in enhancing the quality of GPT-4's output. System messages are instructions or directives that we can give to GPT-4 before the actual conversation or task prompt.
 
-If you're on Mobile: Click the menu icon on mobile to find the same thread history and settings. The interface is exactly the same on mobile. You just have to tap the menu icon first. You can also enable dark mode, which is a personal favorite of mine.
+In essence, a system message is like setting the stage for a play. It doesn't interact directly with the plot (or in this case, the task at hand), but it provides a backdrop that informs the actions and dialogues of the characters.
 
-That's all there is to it! The OpenAI website offers a simple, one-page interface that makes it easy to create and organize your thoughts and generate ideas using ChatGPT. In the next part of this article, we'll dive into basic prompting techniques, so stay tuned to learn more.
+For instance, consider a scenario where you want GPT-4 to generate a step-by-step recipe in the style of a lively and enthusiastic cooking instructor. A system message for this could be: "You are an enthusiastic cooking instructor explaining the process of making a cheese soufflé."
 
-## Basic Prompting
+With this system message, we've set the persona GPT-4 should adopt, along with the tone and style of the output. The result is a conversation that not only provides information but does so in a fun, engaging, and energetic way.
 
-I've been experimenting with Pre-trained Language Models (PLMs) such as ChatGPT and trying to come up with a better way to prompt, which I'll share with you now. ChatGPT is a valuable tool, but despite its vast ability, PLMs like ChatGPT struggle with more complex and multi-step reasoning tasks.
+### Why Use System Messages?
+So, why bother with system messages? Why not just throw our prompts at GPT-4 and let it do its thing?
 
-That's why I've structured this article into three levels of difficulty—beginner, intermediate, and advanced. To effectively and efficiently utilize ChatGPT, it's essential to have a clear understanding of how the model works and to develop a strategic approach when prompting it. This is where understanding the different input types come in. But you might be wondering, aren't input and prompts the same thing?
+Well, while GPT-4 is a powerful model capable of generating impressively human-like text, it's not omniscient. The model doesn't have a pre-existing understanding of the context, tone, or style we might want in our output.
 
-### The Difference Between an Input and a Prompt
+By using system messages, we essentially provide a guidepost for GPT-4. We can direct the AI to adopt a specific persona, maintain a particular tone, or even write in a certain style. In doing so, we can ensure that GPT-4's outputs align more closely with our expectations and needs.
 
-Input and prompts are closely related concepts in the context of pre-trained language models like ChatGPT. The input is the data or information provided to the model, while the prompt is the specific question or task that the model is being asked to perform.
+### Practical Applications of System Messages
+The applications of system messages with GPT-4 are nearly limitless. Whether you're generating creative content, drafting business communication, or designing an AI-powered interactive application, system messages can significantly enhance the relevance and appeal of the generated text.
 
-Prompts are a form of input, they are a specific form of input in which the input is a question or a task. The prompt is typically a text string that is used to specify the task that the model should perform. It could be a simple text prompt such as "generate a summary of this article" or a more complex query "What are some ways to improve employee retention in a small business?".
+In content generation, for example, system messages can set the tone and style of the output, be it a hilarious joke, a thrilling short story, or a calming bedtime tale. For business communication, a system message can ensure a professional tone is maintained throughout the text.
 
-In general, the goal of the prompt is to provide the model with the necessary information and context to generate an accurate and relevant output. The input, on the other hand, is the data that the model uses to generate the output.
+In interactive applications, system messages can help GPT-4 maintain consistent personas. For instance, if you're designing an AI chatbot for a vintage music store, a system message like "You are an expert on vintage music and instruments, and you communicate in a friendly and helpful manner" can guide GPT-4 in its interactions with users.
 
-So while inputs and prompts are closely related, they are not the same thing. Inputs are a broader category of information provided to the model, while prompts are a specific type of input used to specify the task that the model should perform.
+### In Conclusion
+Mastering the use of system messages with GPT-4 can open up new dimensions of interaction with the model. It enables a level of control over the generated content's style, tone, and persona that would be hard to achieve otherwise. So next time you prompt GPT-4, remember to set the stage first with a well-crafted system message. Harness the power of context and watch the AI's responses align beautifully with your expectations.
 
-Think of it as being the key to unlocking ChatGPT's true potential. So, let's dive in and get to know the five basic input types that will make you a ChatGPT pro in no time:
+Stay tuned for more insights into GPT-4 and other exciting advancements in UX design, and don't forget to experiment with your own system messages. After all, exploration and creativity are at the heart of UX design. Happy prompting!
 
 ## 7 Beginner ChatGPT Input Types
 
@@ -306,18 +312,18 @@ These inputs are like the secret sauce that will make your ChatGPT outputs 10 ti
 </details>
 <br>
 
-### Combining Input Types (Putting it all together!)
+### Combining Input Types: The Grand Finale
 
-By combining these different input types, the model is provided with a clear goal, an example to base the output on, and specific guidelines to follow in order to generate an accurate and relevant output.
+By blending these diverse input types, we equip the model with a clear objective, a referential example for output generation, and precise guidelines for producing accurate and relevant results.
 
-Keep in mind that there are many ways to use input types, many ways to categorize information, and many combinations of words to explore, this is just one example, but by experimenting with different inputs types you will probably stumble onto a useful combination that fits your needs.
+Remember, there are limitless ways to utilize input types, categorize information, and explore various word combinations. While the examples provided here serve as a starting point, your own experimentation with different input types will likely uncover combinations perfectly suited to your unique needs.
 
-## That's my input on beginner prompting in chatGPT!
+And that wraps up our beginner's guide to prompting in ChatGPT!
 
-So that's a look at some basic prompting techniques you can use with chatGPT. Thanks for reading the article. The next section we will be covering intermediate prompting techniques and examples, so stay tuned to learn more, and don’t forget to subscribe to the unique ux YouTube channel. Let’s get prompting!
+This article has provided you with a glimpse into some fundamental prompting techniques you can leverage with ChatGPT. I appreciate your time in reading this article. Next up, we'll be diving into intermediate prompting techniques and examples. So, stay tuned to explore further and make sure to subscribe to the Unique UX YouTube channel. Let's get prompting!
 
-Okay, you know how sometimes you're using a website or app and it just sucks? Here at Unique Ux, we find common crappy ux mistakes and whip them into shape!
+Do you ever find yourself frustrated by an app or website that seems poorly designed? At Unique UX, we identify common UX flaws and transform them into user-friendly experiences!
 
-It's like a digital self-improvement program for your content, but without the early morning wake-up calls or sweatpants-only dress code.
+Consider it a digital self-improvement program for your content, minus the grueling early morning wake-up calls and mandatory sweatpants dress code.
 
-We want to help you find a unique way to serve your users and customers, so don't forget to like and subscribe for more information on user experience design and AI technology like chatGPT.
+Our goal is to assist you in finding a unique approach to serving your users and customers. So, don't forget to like and subscribe for more insights into user experience design and cutting-edge AI technologies like ChatGPT.
