@@ -20,25 +20,33 @@ const posts = await Astro.glob('../blog/*.md');
 
   <!-- create component for all posts -->
 
-  {posts.map((post) => (
+{posts.map((post) => (
   <main class="rounded-corners">
     <article>
       <div class="blog-summary-options">
-      <a href={post.frontmatter.url}>
-        <div class="blog-details">
-          <h2 class="blog-title">{post.frontmatter.title}</h2>
-          <p class="blog-summary">{post.frontmatter.description}</p>
+        <a href={post.frontmatter.url}>
           {post.frontmatter.image && <img src={post.frontmatter.image} alt={post.frontmatter.title} />}
-        </div>
-      </a>
+          <div class="blog-details">
+            <h2 class="blog-title">{post.frontmatter.title}</h2>
+            <p class="blog-summary">{post.frontmatter.description}</p>
+          </div>
+        </a>
     </div>
     </article>
   </main>
 ))}
 
-
 </Layout>
 <style>
+
+.blog-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
 .blog-details {
   justify-content: center;
