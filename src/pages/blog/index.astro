@@ -8,7 +8,7 @@ const posts = await Astro.glob('../blog/*.md');
 ---
  
 <Layout title="About">
-
+  
     <header class="main">
         <section class="hero-container">
             <div class="title-large margin-bottom-8">UX Unboxed</div>
@@ -31,7 +31,7 @@ const posts = await Astro.glob('../blog/*.md');
             <p class="blog-summary">{post.frontmatter.description}</p>
           </div>
         </a>
-    </div>
+      </div>
     </article>
   </main>
 ))}
@@ -53,7 +53,6 @@ const posts = await Astro.glob('../blog/*.md');
 }
 
 .blog-summary-options {
-    display: flex;
     grid-column: 1 /13;
     padding: 0px;
     gap: 24px;
@@ -71,7 +70,7 @@ const posts = await Astro.glob('../blog/*.md');
 
 
 
-.blog-icon {
+.blog-image {
     width: 115px;
     height: 115px;
     background: url(/imgs/blog-icon.png);
