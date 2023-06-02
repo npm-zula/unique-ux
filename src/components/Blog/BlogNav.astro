@@ -1,0 +1,62 @@
+---
+const navs = [
+  {
+    title: "IA",
+    href: "#"
+  },
+  {
+    title: "AI",
+    href: "#"
+  },
+  {
+    title: "UX",
+    href: "#"
+  },
+  {
+    title: "UI",
+    href: "#"
+  },
+  {
+    title: "MEDIA",
+    href: "#"
+  },
+]
+---
+
+<div class="blog-nav">
+  {
+    navs.map((nav) => (
+      <div class="nav-item">
+        {nav.title}
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .blog-nav {
+    width: 100%;
+    display: flex;
+    margin: 15px 0px;
+  }
+  .nav-item {
+    text-align: center;
+    width: 20%;
+    padding: 5px 0px;
+    background: radial-gradient(50% 50% at 50% 50%, #2b2c32 0%, #2b2c32 100%);
+    margin: 0px 8px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #FFFFFF80;
+    cursor: pointer;
+  }
+  .nav-item:hover {
+    color: #FFFFFF;
+  }
+  .nav-item:first-child {
+    margin-left: 0px !important;
+  }
+  .nav-item:last-child {
+    margin-right: 0px !important
+  }
+</style>

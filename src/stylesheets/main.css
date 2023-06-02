@@ -339,3 +339,16 @@ textarea {
   position: sticky;
   -webkit: Sticky;
 }
+
+/* Begin: Add Layout Section style */
+
+.main-layout {
+  margin: 0px 120px 0px 120px;
+}
+@media screen and (max-width: 576px) {
+  .main-layout {
+    margin: 0 5px 0 5px;
+  }
+}
+
+/* End: Add Layout Section style */

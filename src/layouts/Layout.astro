@@ -37,11 +37,14 @@ import "../stylesheets/utils.css";
     <script src="../js/copy-text.js"></script>
     <!-- <script src="../js/navigation.js"></script> -->
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" -->
   </head>
   <title>{title}</title>
 </html>
 <body>
   <Navbar />
-  <slot />
+  <section class="main-layout">
+    <slot />
+  </section>
 </body>

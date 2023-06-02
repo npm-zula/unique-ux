@@ -1,0 +1,80 @@
+---
+const {active} =  Astro.props;
+
+function handleClick(id) {
+  
+}
+---
+
+<!-- This is difficulty component -->
+<div @click={handleClick(1)} class={`item item-blue ${active === "1" ? "blue-active" : ""}`}>
+  <p>BEGINNER</p>
+</div>
+<div @click={handleClick(2)} class={`item item-yellow ${active === "2" ? "yellow-active" : ""}`}>
+  <p>INTERMEDIATE</p>
+</div>
+<div @click={handleClick(3)} class={`item item-red ${active === "3" ? "red-active" : ""}`}>
+  <p>ADVANCED</p>
+</div>
+
+<style>
+  .item p{
+    font-size: 16px !important;
+  }
+  /* Beginner item */
+  .item-blue {
+    margin: 2px 8px 2px 0px;
+    padding: 0px 8px !important;
+    border-image: linear-gradient(to Right,#0080FF54, #0080FF54) 1;
+    border-width: 2px 6px 2px 12px;
+    border-style: solid;
+    cursor: pointer;
+  }
+
+  .blue-active {
+    border-image: linear-gradient(to Right,#0080FF, #0080FF) 1;
+  }
+
+  .item-blue:focus, .item-blue:hover {
+    border-image: linear-gradient(to Right,#0080FF, #0080FF) 1;
+  }
+
+  /* Intermediate Item */
+  .item-yellow {
+    margin: 2px 8px;
+    padding: 0px 8px !important;
+    border-image: linear-gradient(to Right,#FFEE0054, #FFEE0054) 1;
+    border-width: 2px 4px;
+    border-style: solid;
+    cursor: pointer;
+  }
+
+  .yellow-active {
+    border-image: linear-gradient(to Right,#FFEE00, #FFEE00) 1;
+  }
+
+  .item-yellow:focus, .item-yellow:hover {
+    border-image: linear-gradient(to Right,#FFEE00, #FFEE00) 1;
+  }
+
+  /* Advanced Item */
+  .item-red {
+    margin: 2px 8px;
+    padding: 0px 8px !important;
+    border-image: linear-gradient(to Right,#CE1C2D54, #CE1C2D54) 1;
+    border-width: 2px 12px 2px 6px;
+    border-style: solid;
+    cursor: pointer;
+  }
+
+  .red-active {
+    border-image: linear-gradient(to Right,#CE1C2D, #CE1C2D) 1;
+  }
+
+  .item-red:focus, .item-red:hover {
+    border-image: linear-gradient(to Right,#CE1C2D, #CE1C2D) 1;
+  }
+  .active {
+    background: red;
+  }
+</style>
