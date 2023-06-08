@@ -9,7 +9,7 @@ const beginnerPosts = posts.filter(item => item.frontmatter.level == 'beginner')
 const intermediatePosts = posts.filter(item => item.frontmatter.level == 'intermediate')
 const advancedPosts = posts.filter(item => item.frontmatter.level == 'advanced')
 
-let active = '1'
+const video_url = "example.mp4";
 
 
 ---
@@ -120,7 +120,9 @@ let active = '1'
         </div>
       </div>
       <div class="col-sm-4 col-12 blog-video-box">
-        <video class="blog-video" width="300" controls></video>
+        <video class="blog-video" width="300" controls>
+          <source src={video_url} type="video/mp4">
+        </video>
       </div>
     </div>
 </Layout>
