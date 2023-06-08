@@ -9,7 +9,7 @@ const beginnerPosts = posts.filter(item => item.frontmatter.level == 'beginner')
 const intermediatePosts = posts.filter(item => item.frontmatter.level == 'intermediate')
 const advancedPosts = posts.filter(item => item.frontmatter.level == 'advanced')
 
-const video_url = "https://www.youtube.com/shorts/a5Ai9mNXYcA";
+const video_url = "https://www.youtube.com/embed/tgbNymZ7vqY";
 
 
 ---
@@ -120,9 +120,7 @@ const video_url = "https://www.youtube.com/shorts/a5Ai9mNXYcA";
         </div>
       </div>
       <div class="col-sm-4 col-12 blog-video-box">
-        <video class="blog-video" width="300" controls>
-          <source src={video_url} type="video/mp4">
-        </video>
+        <iframe class="blog-video" width="300" height="635" src={video_url}></iframe>
       </div>
     </div>
 </Layout>
@@ -192,9 +190,9 @@ const video_url = "https://www.youtube.com/shorts/a5Ai9mNXYcA";
     gap: 24px;
   }
 
-  .blog-video {
+  /* .blog-video {
     height: 80vh;
-  }
+  } */
   .blog-video-box {
     margin-top: 100px;
     text-align: right;
