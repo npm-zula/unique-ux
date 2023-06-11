@@ -2,23 +2,23 @@
 const navs = [
   {
     title: "IA",
-    href: "#"
+    href: "https://uxwrld.com/blog/ia"
   },
   {
     title: "AI",
-    href: "#"
+    href: "https://uxwrld.com/blog/ai"
   },
   {
     title: "UX",
-    href: "#"
+    href: "https://uxwrld.com/blog/ux"
   },
   {
     title: "UI",
-    href: "#"
+    href: "https://uxwrld.com/blog/ui"
   },
   {
-    title: "MEDIA",
-    href: "#"
+    title: "🎦",
+    href: "https://uxwrld.com/blog/media"
   },
 ]
 ---
@@ -36,15 +36,17 @@ const navs = [
 <style>
   .blog-nav {
     width: 100%;
+    overflow-x: auto;
     display: flex;
     margin: 15px 0px;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
   }
   .nav-item {
     text-align: center;
-    width: 20%;
+    flex: 0 0 20%;
     padding: 5px 0px;
     background: radial-gradient(50% 50% at 50% 50%, #2b2c32 0%, #2b2c32 100%);
-    margin: 0px 8px;
+    margin: 0px 4px;
     font-size: 40px;
     font-weight: 800;
     color: #FFFFFF80;
@@ -58,6 +60,8 @@ const navs = [
     margin-left: 0px !important;
   }
   .nav-item:last-child {
-    margin-right: 0px !important
+    margin-right: 0px !important;
   }
 </style>
+
+
