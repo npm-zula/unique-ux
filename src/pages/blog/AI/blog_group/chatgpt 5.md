@@ -1,11 +1,11 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../../../layouts/BlogLayout.astro
 title: "ChatGPT: Beginner Prompting"
-url: /blog/chatgpt
+url: /blog/AI/blog_group/chatgpt
 description: Join me, Kyle, your trusty user experience expert, as we delve into the depths of ChatGPT and explore its endless potential.
 image: /imgs/blog-image.svg
-hoverImage: /imgs/blog-image-blue.svg
-level: beginner
+hoverImage: /imgs/blog-image-red.svg
+level: advanced
 ---
 
  <!-- <div class="margin-bottom-16 video-container">

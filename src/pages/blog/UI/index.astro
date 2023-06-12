@@ -1,9 +1,9 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Difficulty from "../../components/Difficulty.astro"
-import BlogNav from '../../components/Blog/BlogNav.astro'
+import Layout from "../../../layouts/Layout.astro";
+import Difficulty from "../../../components/Difficulty.astro"
+import BlogNav from '../../../components/Blog/BlogNav.astro'
 
-const posts = await Astro.glob("../blog/IA/blog_group/*.md");
+const posts = await Astro.glob("./blog_group/*.md");
 
 const beginnerPosts = posts.filter(item => item.frontmatter.level == 'beginner')
 const intermediatePosts = posts.filter(item => item.frontmatter.level == 'intermediate')
@@ -11,7 +11,7 @@ const advancedPosts = posts.filter(item => item.frontmatter.level == 'advanced')
 
 const video_url = "https://www.youtube.com/embed/tgbNymZ7vqY";
 
-const groupId = 'IA'
+const groupId = 'UI'
 ---
 
 <Layout title="Blog">
@@ -26,13 +26,13 @@ const groupId = 'IA'
 
     <div class="row blog-main">
       <div class="col-sm-8 col-12 blog-lists">
-        <article class="difficulty">
-          <BlogNav active={ groupId }/>
+        <article class="difficulty order-3 order-md-1">
+          <BlogNav active={groupId}/>
         </article>  
-        <article class="difficulty">
+        <article class="difficulty order-2 order-md-2">
           <Difficulty />
         </article>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content order-1 order-md-3" id="pills-tabContent">
           <div id="pills-beginner" class="tab-pane fade show active">
             {
               beginnerPosts.map((post) => (

@@ -5,6 +5,35 @@ article {
     padding: .3rem;
   }
 
+  @media screen and (max-width: 575px) {
+    .blog-img {
+      display: none;
+    }
+    .blog-title {
+      font-family: Poppins !important;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      line-height: 24px !important;
+      letter-spacing: 0em !important;
+      text-align: left !important;
+    }
+    .blog-summary {
+      font-family: IBM Plex Sans !important;
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      line-height: 16px !important;
+      letter-spacing: 0em !important;
+      text-align: left !important;
+    }
+    .blog-video {
+      display: none;
+    }
+    .blog-lists {
+      display: flex;
+      flex-flow: column;
+    }
+  }
+
   @media screen and (min-width: 576px) {
     article {
       grid-column: 1 / 9;
