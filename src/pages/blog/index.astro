@@ -26,13 +26,13 @@ const groupId = 'IA'
 
     <div class="row blog-main">
       <div class="col-sm-8 col-12 blog-lists">
-        <article class="difficulty">
+        <article class="difficulty order-3 order-md-1">
           <BlogNav active={ groupId }/>
         </article>  
-        <article class="difficulty">
+        <article class="difficulty order-2 order-md-2">
           <Difficulty />
         </article>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content order-1 order-md-3" id="pills-tabContent">
           <div id="pills-beginner" class="tab-pane fade show active">
             {
               beginnerPosts.map((post) => (
