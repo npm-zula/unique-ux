@@ -1,38 +1,38 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Difficulty from "../../components/Difficulty.astro"
-import BlogNav from '../../components/Blog/BlogNav.astro'
+import Layout from "../../../layouts/Layout.astro";
+import Difficulty from "../../../components/Difficulty.astro"
+import BlogNav from '../../../components/Blog/BlogNav.astro'
 
-const posts = await Astro.glob("../blog/IA/blog_group/*.md");
+const posts = await Astro.glob("./blog_group/*.md");
 
 const beginnerPosts = posts.filter(item => item.frontmatter.level == 'beginner')
 const intermediatePosts = posts.filter(item => item.frontmatter.level == 'intermediate')
 const advancedPosts = posts.filter(item => item.frontmatter.level == 'advanced')
 
-const video_url = "https://www.youtube.com/embed/a5Ai9mNXYcA";
+const video_url = "https://www.youtube.com/embed/tgbNymZ7vqY";
 
-const groupId = 'IA'
+const groupId = 'UI'
 ---
 
 <Layout title="Blog">
   <header class="main">
     <section class="hero-container">
-       <div class="title-large margin-bottom-8">UX Unboxed</div>
+      <!-- <div class="title-large margin-bottom-8">UX Unboxed</div>
       <div class="subtitle margin-top-16">
         Where Art and Technology Converge
-      </div>
+      </div> -->
     </section>
   </header>
 
     <div class="row blog-main">
       <div class="col-sm-8 col-12 blog-lists">
-        <article class="difficulty">
-          <BlogNav active={ groupId }/>
+        <article class="difficulty order-3 order-md-1">
+          <BlogNav active={groupId}/>
         </article>  
-        <article class="difficulty">
+        <article class="difficulty order-2 order-md-2">
           <Difficulty />
         </article>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content order-1 order-md-3" id="pills-tabContent">
           <div id="pills-beginner" class="tab-pane fade show active">
             {
               beginnerPosts.map((post) => (
@@ -126,52 +126,18 @@ const groupId = 'IA'
 </Layout>
 
 <style>
-  @media (max-width: 1024px) {
-    .blog-img,
-    .blog-hover-img {
-      display: none;
-    }
-
-    .blog-card {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 16px;
-      gap: 16px;
-      position: absolute;
-      width: 344px;
-      height: 92px;
-      left: 8px;
-      top: 432px;
-      background: #2B2C32;
-      backdrop-filter: blur(42px);
-    }
-
-    .blog-card .blog-title {
-      font-size: 16px;
-    }
-
-    .blog-card .blog-summary {
-      font-size: 12px;
-    }
-  }
-
   main {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
   }
-
   .blog-main {
     display: flex;
-    flex-wrap: wrap;
   }
-
   .blog-list {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(9, 1fr);
   }
-
   .blog-title {
     font-size: 20px;
     font-weight: 500;
@@ -186,7 +152,7 @@ const groupId = 'IA'
   }
 
   .blog-summary-options {
-    grid-column: 1 / 13;
+    grid-column: 1 /13;
     padding: 0px;
     gap: 24px;
     width: 100%;
@@ -194,13 +160,13 @@ const groupId = 'IA'
     border-color: transparent;
     border-style: solid;
     border-width: 2px 6px 2px 14px;
-    backdrop-filter: blur(42px);
+    backdrop-filter: blur(42px);    
     background: radial-gradient(50% 50% at 50% 50%, #2b2c32 0%, #2b2c32 100%);
   }
 
   .blog-summary-options:focus,
   .blog-summary-options:hover {
-    border-image: linear-gradient(to Right, #d0d5da2c, #e2e6e949) 30;
+    border-image: linear-gradient(to Right,#0080FF, #0080FFaa) 30;
     border-width: 2px 6px 2px 14px;
     border-style: solid;
   }
@@ -224,27 +190,26 @@ const groupId = 'IA'
     gap: 24px;
   }
 
+  /* .blog-video {
+    height: 80vh;
+  } */
   .blog-video-box {
+    margin-top: 100px;
     text-align: right;
   }
-
   /* Style for logo image change in blog */
   .blog-hover-img {
     display: none;
   }
-
   .blog-summary-options:focus,
   .blog-summary-options:hover .blog-hover-img {
     display: block;
   }
-
   .blog-summary-options:focus,
   .blog-summary-options:hover .blog-img {
     display: none;
   }
-
   .difficulty {
     display: flex;
   }
 </style>
-

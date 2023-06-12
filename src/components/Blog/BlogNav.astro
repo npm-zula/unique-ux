@@ -2,33 +2,38 @@
 const navs = [
   {
     title: "IA",
-    href: "https://uxwrld.com/blog/ia"
+    id: "IA",
+    href: "/blog/IA"
   },
   {
     title: "AI",
-    href: "https://uxwrld.com/blog/ai"
+    id: "AI",
+    href: "/blog/AI"
   },
   {
     title: "UX",
-    href: "https://uxwrld.com/blog/ux"
+    id: "UX",
+    href: "/blog/UX"
   },
   {
     title: "UI",
-    href: "https://uxwrld.com/blog/ui"
+    id: "UI",
+    href: "/blog/UI"
   },
   {
     title: "🎦",
-    href: "https://uxwrld.com/blog/media"
+    id: "MEDIA",
+    href: "/blog/MEDIA"
   },
 ]
+
+const { active } = Astro.props;
 ---
 
 <div class="blog-nav">
   {
     navs.map((nav) => (
-      <div class="nav-item">
-        {nav.title}
-      </div>
+      active === nav.id ? <a class="nav-item active" href={nav.href}>{nav.title}</a> : <a class="nav-item"  href={nav.href}>{nav.title}</a>
     ))
   }
 </div>
@@ -40,6 +45,9 @@ const navs = [
     display: flex;
     margin: 15px 0px;
     -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  }
+  .blog-nav .active {
+    color: white !important;
   }
   .nav-item {
     text-align: center;
@@ -62,6 +70,16 @@ const navs = [
   .nav-item:last-child {
     margin-right: 0px !important;
   }
+  @media screen and (max-width: 575px) {
+    .nav-item {
+      font-family: Poppins !important;
+      font-size: 24px !important;
+      font-weight: 700 !important;
+      line-height: 36px !important;
+      letter-spacing: 0em !important;
+      text-align: center !important;
+      margin: 0px 4px;
+      padding: 16px 18.5px !important;
+    }
+  }
 </style>
-
-
