@@ -1,0 +1,58 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+
+const posts = await Astro.glob('../blog/*.md');
+
+
+---
+ 
+<Layout title="Unique UX">
+
+    <header class="main">
+        <section class="hero-container">
+            <div class="title-large margin-bottom-8">UX Unboxed</div>
+            <div class="subtitle margin-top-16">
+                Where Art and Technology Converge
+            </div>
+        </section>
+    </header>
+
+<!-- create component for all posts -->
+
+  {posts.map((post) => (
+    <main class="rounded-corners">
+      <div class="blog-summary-options">
+        <a href={post.frontmatter.url}>
+          <div class="blog-icon"/>
+          <div class="blog-details">
+            <h2 class="blog-title">{post.frontmatter.title}</h2>
+            <p class="blog-summary">{post.frontmatter.description}</p>
+          </div>
+        </a>
+      </div>
+    </main>
+  ))}
+
+<!-- <main class="rounded-corners">
+    <div class="blog-summary-options">
+        <a href="/blog/ChatGPT-Beginner-to-Advanced.html">
+            <div class="blog-icon"/>
+            <div class="blog-details">
+                <h2 class="blog-title">ChatGPT: Beginner Prompting</h2>
+                <p class="blog-summary">Join me, Kyle, your trusty user experience expert, as we delve into the depths of ChatGPT and explore its endless potential.</p>
+            </div>
+            </a>
+    </div>
+</main> -->
+
+
+</Layout>
+
+<style>
+    a {
+        display: flex;
+        padding: 16px;
+        gap: 24px;
+    }
+</style>
