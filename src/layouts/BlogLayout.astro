@@ -6,7 +6,7 @@ const {frontmatter} = Astro.props;
 
 const {title} = frontmatter;
 
-const posts = await Astro.glob('../pages/blog/chatgpt.md');
+const posts = await Astro.glob('../pages/blog/IA/blog_group/chatgpt.md');
 
 const post = posts[0];
 
@@ -21,7 +21,7 @@ const headings = post.getHeadings();
     <section class="flex margin-top-32">
     </section>
 
-    <main class="rounded-corners">
+    <main>
         <div class="container">
                 <h1>{title}</h1>
         </div>
@@ -41,7 +41,7 @@ const headings = post.getHeadings();
             </div>
             <div class="line"></div>
             <br>
-            <a class="label-small" href="/blog/blog">All Articles</a>
+            <a class="label-small" href="/blog">All Articles</a>
         </aside>
 
         <article class="article rounded-corners">

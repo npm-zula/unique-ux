@@ -1,0 +1,215 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Difficulty from "../../../components/Difficulty.astro"
+import BlogNav from '../../../components/Blog/BlogNav.astro'
+
+const posts = await Astro.glob("./blog_group/*.md");
+
+const beginnerPosts = posts.filter(item => item.frontmatter.level == 'beginner')
+const intermediatePosts = posts.filter(item => item.frontmatter.level == 'intermediate')
+const advancedPosts = posts.filter(item => item.frontmatter.level == 'advanced')
+
+const video_url = "https://www.youtube.com/embed/tgbNymZ7vqY";
+
+const groupId = 'AI'
+---
+
+<Layout title="Blog">
+  <header class="main">
+    <section class="hero-container">
+      <!-- <div class="title-large margin-bottom-8">UX Unboxed</div>
+      <div class="subtitle margin-top-16">
+        Where Art and Technology Converge
+      </div> -->
+    </section>
+  </header>
+
+    <div class="row blog-main">
+      <div class="col-sm-8 col-12 blog-lists">
+        <article class="difficulty order-3 order-md-1">
+          <BlogNav active={groupId}/>
+        </article>  
+        <article class="difficulty order-2 order-md-2">
+          <Difficulty />
+        </article>
+        <div class="tab-content order-1 order-md-3" id="pills-tabContent">
+          <div id="pills-beginner" class="tab-pane fade show active">
+            {
+              beginnerPosts.map((post) => (
+                <article>
+                  <div class="blog-summary-options">
+                    <a href={post.frontmatter.url}>
+                      {post.frontmatter.image && (
+                        <img
+                          src={post.frontmatter.image}
+                          alt={post.frontmatter.title}
+                          class="blog-img"
+                        />
+                        <img
+                          src={post.frontmatter.hoverImage}
+                          alt={post.frontmatter.title}
+                          class="blog-hover-img"
+                        />
+                      )}
+                      <div class="blog-details">
+                        <h2 class="blog-title">{post.frontmatter.title}</h2>
+                        <p class="blog-summary">{post.frontmatter.description}</p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              ))
+            }
+          </div>
+          <div id="pills-intermediate" class="tab-pane fade">
+            {
+              intermediatePosts.map((post) => (
+                <article>
+                  <div class="blog-summary-options">
+                    <a href={post.frontmatter.url}>
+                      {post.frontmatter.image && (
+                        <img
+                          src={post.frontmatter.image}
+                          alt={post.frontmatter.title}
+                          class="blog-img"
+                        />
+                        <img
+                          src={post.frontmatter.hoverImage}
+                          alt={post.frontmatter.title}
+                          class="blog-hover-img"
+                        />
+                      )}
+                      <div class="blog-details">
+                        <h2 class="blog-title">{post.frontmatter.title}</h2>
+                        <p class="blog-summary">{post.frontmatter.description}</p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              ))
+            }
+          </div>
+          <div id="pills-advanced" class="tab-pane fade">
+            {
+              advancedPosts.map((post) => (
+                <article>
+                  <div class="blog-summary-options">
+                    <a href={post.frontmatter.url}>
+                      {post.frontmatter.image && (
+                        <img
+                          src={post.frontmatter.image}
+                          alt={post.frontmatter.title}
+                          class="blog-img"
+                        />
+                        <img
+                          src={post.frontmatter.hoverImage}
+                          alt={post.frontmatter.title}
+                          class="blog-hover-img"
+                        />
+                      )}
+                      <div class="blog-details">
+                        <h2 class="blog-title">{post.frontmatter.title}</h2>
+                        <p class="blog-summary">{post.frontmatter.description}</p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-12 blog-video-box">
+        <iframe class="blog-video" width="300" height="635" src={video_url}></iframe>
+      </div>
+    </div>
+</Layout>
+
+<style>
+  main {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .blog-main {
+    display: flex;
+  }
+  .blog-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .blog-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .blog-details {
+    justify-content: center;
+  }
+
+  .blog-summary-options {
+    grid-column: 1 /13;
+    padding: 0px;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 2px 6px 2px 14px;
+    backdrop-filter: blur(42px);    
+    background: radial-gradient(50% 50% at 50% 50%, #2b2c32 0%, #2b2c32 100%);
+  }
+
+  .blog-summary-options:focus,
+  .blog-summary-options:hover {
+    border-image: linear-gradient(to Right,#0080FF, #0080FFaa) 30;
+    border-width: 2px 6px 2px 14px;
+    border-style: solid;
+  }
+
+  .blog-image {
+    width: 115px;
+    height: 115px;
+    background: url(/imgs/blog-icon.png);
+  }
+
+  .blog-summary {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    line-height: 26px;
+  }
+
+  a {
+    display: flex;
+    padding: 16px;
+    gap: 24px;
+  }
+
+  /* .blog-video {
+    height: 80vh;
+  } */
+  .blog-video-box {
+    margin-top: 100px;
+    text-align: right;
+  }
+  /* Style for logo image change in blog */
+  .blog-hover-img {
+    display: none;
+  }
+  .blog-summary-options:focus,
+  .blog-summary-options:hover .blog-hover-img {
+    display: block;
+  }
+  .blog-summary-options:focus,
+  .blog-summary-options:hover .blog-img {
+    display: none;
+  }
+  .difficulty {
+    display: flex;
+  }
+</style>

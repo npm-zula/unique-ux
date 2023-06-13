@@ -1,0 +1,80 @@
+<div class="difficulty-switcher-container">
+  <!-- Difficulty switcher component -->
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item nav-item-1" role="presentation">
+      <button class="nav-link active" id="pills-beginner-tab" data-bs-toggle="pill" data-bs-target="#pills-beginner" type="button" role="tab" aria-controls="pills-beginner" aria-selected="true">BEGINNER</button>
+    </li>
+    <li class="nav-item nav-item-2" role="presentation">
+      <button class="nav-link" id="pills-intermediate-tab" data-bs-toggle="pill" data-bs-target="#pills-intermediate" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">INTERMEDIATE</button>
+    </li>
+    <li class="nav-item nav-item-3" role="presentation">
+      <button class="nav-link" id="pills-advanced-tab" data-bs-toggle="pill" data-bs-target="#pills-advanced" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">ADVANCED</button>
+    </li>
+  </ul>
+</div>
+
+<style>
+  /* New */
+  .difficulty-switcher-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line wrapping */
+  }
+
+  /* Rest of the CSS styles remain the same */
+  .nav {
+    flex-wrap: inherit;
+    overflow: overlay;
+  }
+  .nav li {
+    background-color: transparent;
+    font-size: 16px !important;
+    padding-inline: 0px;
+  }
+  .nav li button {
+    color: white;
+  }
+  .nav-item:hover .nav-link {
+    color: #FFFFFFcc;
+    transition: .6s;
+  }
+  .nav-item-1 .active {
+    background-color: transparent !important;
+    border-image: linear-gradient(to Right,#0080FF, #0080FF) 1 !important;
+    transition: .3s;
+  }
+  .nav-item-1 .nav-link {
+    margin: 2px 8px 2px 0px;
+    padding: 0px 8px !important;
+    border-image: linear-gradient(to Right,#0080FF54, #0080FF54) 1;
+    border-width: 2px 6px 2px 12px;
+    border-style: solid;
+    color: #FFFFFF54;
+    cursor: pointer;
+  }
+  .nav-item-2 .active {
+    background-color: transparent !important;
+    border-image: linear-gradient(to Right,#FFEE00, #FFEE00) 1 !important;
+  }
+  .nav-item-2 .nav-link {
+    margin: 2px 8px;
+    padding: 0px 8px !important;
+    border-image: linear-gradient(to Right,#FFEE0054, #FFEE0054) 1;
+    border-width: 2px 4px;
+    border-style: solid;
+    color: #FFFFFF54;
+    cursor: pointer;
+  }
+  .nav-item-3 .active {
+    background-color: transparent !important;
+    border-image: linear-gradient(to Right,#CE1C2D, #CE1C2D) 1 !important;
+  }
+  .nav-item-3 .nav-link {
+    margin: 2px 8px;
+    padding: 0px 8px !important;
+    border-image: linear-gradient(to Right,#CE1C2D54, #CE1C2D54) 1;
+    border-width: 2px 12px 2px 6px;
+    border-style: solid;
+    color: #FFFFFF54;
+    cursor: pointer;
+  }
+</style>

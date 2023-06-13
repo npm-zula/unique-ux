@@ -54,3 +54,9 @@ li::marker {
 .small-btn {
     margin-top: 10px; /* adjust as needed */
 }
+
+@media screen and (max-width: 575px) {
+    .row {
+        --bs-gutter-x: 0;
+    }
+}
