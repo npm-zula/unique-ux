@@ -1,11 +1,11 @@
 ---
 layout: ../../../../layouts/BlogLayout.astro
-title: "ChatGPT: Beginner Prompting"
-url: /blog/IA/blog_group/chatgpt
-description: Join me, Kyle, your trusty user experience expert, as we delve into the depths of ChatGPT and explore its endless potential.
+title: "Metadata and Classification Systems:"
+url: /blog/IA/blog_group/metadata-and-classification-systems
+description: Understanding the role of metadata and classification systems in effective information architecture.
 image: /imgs/blog-image.svg
-hoverImage: /imgs/blog-image-red.svg
-level: advanced
+hoverImage: /imgs/blog-image-blue.svg
+level: intermediate
 ---
 
  <!-- <div class="margin-bottom-16 video-container">

@@ -1,11 +1,11 @@
 ---
 layout: ../../../../layouts/BlogLayout.astro
-title: "ChatGPT: Beginner Prompting"
-url: /blog/IA/blog_group/chatgpt
-description: Join me, Kyle, your trusty user experience expert, as we delve into the depths of ChatGPT and explore its endless potential.
+title: "Complex Information Environments:"
+url: /blog/IA/blog_group/complex-information-environments
+description: Addressing the challenges of scalability and complexity in information architecture.
 image: /imgs/blog-image.svg
-hoverImage: /imgs/blog-image-yellow.svg
-level: intermediate
+hoverImage: /imgs/blog-image-red.svg
+level: advanced
 ---
 
  <!-- <div class="margin-bottom-16 video-container">

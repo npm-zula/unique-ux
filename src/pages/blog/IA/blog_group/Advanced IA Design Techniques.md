@@ -1,8 +1,8 @@
 ---
 layout: ../../../../layouts/BlogLayout.astro
-title: "ChatGPT: Beginner Prompting"
-url: /blog/IA/blog_group/chatgpt
-description: Join me, Kyle, your trusty user experience expert, as we delve into the depths of ChatGPT and explore its endless potential.
+title: "Advanced IA Design Techniques:"
+url: /blog/IA/blog_group/advanced-ia-design-techniques
+description: Delving into advanced design patterns and techniques for information architecture.
 image: /imgs/blog-image.svg
 hoverImage: /imgs/blog-image-red.svg
 level: advanced
